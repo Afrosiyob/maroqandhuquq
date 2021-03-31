@@ -254,6 +254,9 @@ footer p {
 @media all and (max-width: 768px) {
   .top-sub-header .left-item h3 {
     font-size: 18px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
   }
 }
 
