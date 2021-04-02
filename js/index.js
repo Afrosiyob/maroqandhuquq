@@ -106,4 +106,10 @@ $(document).ready(function() {
 
 
 
+    $('#buxoro').click(function(e) {
+        e.preventDefault();
+        // alert("this is buhor");
+    });
+
+
 });
