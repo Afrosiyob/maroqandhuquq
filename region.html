@@ -11,14 +11,16 @@
     <title>Huquq</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
 </head>
 
 <body>
@@ -60,8 +62,7 @@
             </svg>
 
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
 
@@ -121,41 +122,597 @@
             </div>
 
 
-            <div class="redion-body">
-                <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="150" height="150">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M76 149.993C91.7349 149.788 106.301 144.737 118.274 136.264L105.046 118.058C96.7883 123.831 86.7923 127.289 76 127.491V149.993ZM118.373 136.194C118.818 135.878 119.259 135.558 119.696 135.233L118.373 136.194ZM150 75C150 99.5861 138.17 121.409 119.891 135.087L106.663 116.881C114.87 110.667 121.193 102.096 124.626 92.1769L146.02 99.1284L146.638 97.2263L125.243 90.2747C126.711 85.4413 127.5 80.3128 127.5 75C127.5 69.6878 126.711 64.5599 125.244 59.7271L146.638 52.7757L146.02 50.8735L124.626 57.8249C121.194 47.905 114.871 39.3343 106.664 33.12L119.892 14.9136C138.17 28.5916 150 50.4143 150 75ZM119.804 14.8481L118.275 13.7368L105.047 31.9431C96.789 26.1694 86.7927 22.711 76 22.5093V0.00653035C92.4117 0.22099 107.552 5.70676 119.804 14.8481ZM30.1088 135.087C11.8302 121.409 0 99.5861 0 75C0 50.4143 11.8298 28.5917 30.1078 14.9136L43.3356 33.1201C35.1293 39.3344 28.8063 47.9051 25.3737 57.8251L3.97978 50.8738L3.36174 52.7759L24.7561 59.7273C23.2889 64.5601 22.5 69.6879 22.5 75C22.5 80.3127 23.2891 85.4412 24.7566 90.2745L3.36174 97.2261L3.97977 99.1282L25.3743 92.1767C28.8071 102.096 35.1303 110.667 43.3365 116.881L30.1088 135.087ZM30.2919 135.224C30.7372 135.555 31.1864 135.881 31.6393 136.203L30.2919 135.224ZM31.7259 136.264C43.699 144.737 58.2651 149.788 74 149.993V127.491C63.2076 127.289 53.2117 123.831 44.9536 118.057L31.7259 136.264ZM31.7251 13.737L30.1851 14.8559C42.4397 5.70988 57.5837 0.221051 74 0.00653035V22.5093C63.2072 22.711 53.2109 26.1695 44.9527 31.9432L31.7251 13.737ZM75.3868 0.000976562C75.258 0.00032578 75.129 0 75 0C74.871 0 74.742 0.00032578 74.6132 0.000976562H75.3868Z"
-                            fill="black" />
-                    </mask>
-                    <g mask="url(#mask0)">
-                        <g filter="url(#filter0_b)">
-                            <circle cx="75" cy="75" r="75" fill="white" fill-opacity="0.1" />
-                        </g>
-                        <path
-                            d="M75 0C91.4428 1.96079e-07 107.43 5.40359 120.501 15.3792C133.572 25.3548 143.003 39.3495 147.342 55.2095C151.681 71.0696 150.687 87.916 144.514 103.156C138.341 118.396 127.331 131.186 113.178 139.556L75 75V0Z"
-                            fill="url(#paint0_angular)" />
-                    </g>
-                    <path
-                        d="M61.4209 80.8545H59.0625V85H53.3496V80.8545H44.8096V76.6064L53.7158 63.584H59.0625V76.5332H61.4209V80.8545ZM53.3496 76.5332V74.043C53.3496 73.5742 53.3643 72.9443 53.3936 72.1533C53.4326 71.3525 53.4619 70.9326 53.4814 70.8936H53.3203C52.9883 71.6455 52.6123 72.3486 52.1924 73.0029L49.8193 76.5332H53.3496ZM75.6738 85H69.7998V73.6621C69.7998 72.2852 69.8291 71.0254 69.8877 69.8828C69.5264 70.3223 69.0771 70.7812 68.54 71.2598L66.1084 73.2666L63.1055 69.5752L70.459 63.584H75.6738V85ZM80.7129 82.5684C80.7129 81.6699 80.9766 80.9766 81.5039 80.4883C82.041 80 82.8174 79.7559 83.833 79.7559C84.7998 79.7559 85.542 80 86.0596 80.4883C86.5771 80.9766 86.8359 81.6699 86.8359 82.5684C86.8359 83.4473 86.5674 84.1357 86.0303 84.6338C85.5029 85.1221 84.7705 85.3662 83.833 85.3662C82.8662 85.3662 82.1045 85.1221 81.5479 84.6338C80.9912 84.1455 80.7129 83.457 80.7129 82.5684ZM97.8516 70.9668C99.082 70.9668 100.19 71.2549 101.177 71.8311C102.173 72.3975 102.944 73.2031 103.491 74.248C104.048 75.293 104.326 76.499 104.326 77.8662C104.326 80.2588 103.604 82.0947 102.158 83.374C100.723 84.6533 98.5449 85.293 95.625 85.293C93.125 85.293 91.084 84.9072 89.502 84.1357V79.3896C90.3516 79.7803 91.3086 80.1025 92.373 80.3564C93.4473 80.6104 94.3701 80.7373 95.1416 80.7373C96.2158 80.7373 97.041 80.5127 97.6172 80.0635C98.1934 79.6045 98.4814 78.9307 98.4814 78.042C98.4814 77.2217 98.1885 76.582 97.6025 76.123C97.0166 75.6641 96.1279 75.4346 94.9365 75.4346C94.0283 75.4346 93.0469 75.6055 91.9922 75.9473L89.8682 74.8926L90.6738 63.584H102.891V68.4033H95.5957L95.332 71.2305C96.0938 71.084 96.6357 71.0059 96.958 70.9961C97.2803 70.9766 97.5781 70.9668 97.8516 70.9668Z"
-                        fill="white" />
-                    <defs>
-                        <filter id="filter0_b" x="-25" y="-25" width="200" height="200" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feGaussianBlur in="BackgroundImage" stdDeviation="12.5" />
-                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape" />
-                        </filter>
-                        <radialGradient id="paint0_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                            gradientTransform="translate(75 75) rotate(-90) scale(75)">
-                            <stop stop-color="#F6236F" />
-                            <stop offset="0.333333" stop-color="#FFD231" />
-                            <stop offset="0.682292" stop-color="#59DCA5" />
-                            <stop offset="1" stop-color="#00A4AC" />
-                        </radialGradient>
-                    </defs>
+            <div class="region-body">
+
+
+
+                <!-- <svg class="progress-ring" width="150" height="150">
+                 
+                    <circle class="progress-ring-bg" percent="20" stroke="rgba(255,255,255,0.1)" stroke-width="20" cx="75" cy="75" r="65" fill="transparent" >
+                    </circle>
+                    <circle class="progress-ring-circle"  gradientUnits="userSpaceOnUse" gradientTransform="translate(75 75) rotate(-90) scale(75)" percent="20" stroke="#48b7c7" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                    </circle>
+                    <text class="text"  x="50%" y="50%" fill="white" stroke="white"   dominant-baseline="middle" text-anchor="middle"></text>
+                    <circle class="progress-ring-dash"  stroke="#414a7c" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                    </circle>
+                   
+                </svg> -->
+
+                <div class="my-5">
+
+                    <div class="owl-carousel reagion-card-carousel  owl-theme">
+                        <div class="item">
+                            <div class="slide-item p-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="circle-progress-item-number mb-3">
+
+                                    <span class="number"> 4 </span>
+
+                                    <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0)">
+                                        <path d="M75 12.2263C40.367 12.2263 12.2224 40.3792 12.2224 75.0192C12.2224 109.659 40.367 137.812 75 137.812C109.633 137.812 137.778 109.659 137.778 75.0192C137.778 40.3792 109.633 12.2263 75 12.2263Z" fill="#1A203D" stroke="#0D1125" stroke-width="6"/>
+                                        <path d="M75 150C33.6656 150 0 116.364 0 74.9808C0 33.5975 33.6656 0 75 0C116.334 0 150 33.6359 150 75.0192C150 116.402 116.334 150 75 150ZM75 10.5472C39.4939 10.5472 10.5828 39.4656 10.5828 74.9808C10.5828 110.496 39.4939 139.414 75 139.414C110.506 139.414 139.417 110.496 139.417 74.9808C139.417 39.4656 110.506 10.5472 75 10.5472Z" fill="url(#paint0_linear)"/>
+                                        <path d="M74.9999 1.53336C34.5091 1.53336 1.57202 34.4789 1.57202 74.98C1.57202 115.481 34.5091 148.427 74.9999 148.427C115.491 148.427 148.428 115.481 148.428 74.98C148.428 34.4789 115.491 1.53336 74.9999 1.53336ZM74.9999 140.986C38.6119 140.986 9.04901 111.377 9.04901 75.0184C9.04901 38.6211 38.6502 9.05061 74.9999 9.05061C111.388 9.05061 140.951 38.6594 140.951 75.0184C140.951 111.377 111.388 140.986 74.9999 140.986Z" fill="url(#paint1_linear)"/>
+                                        <linearGradient id="paint1_linear" x1="101.597" y1="-21.7335" x2="50.5225" y2="163.942" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFD744"/>
+                                        <stop offset="0.0678869" stop-color="#A6761A"/>
+                                        <stop offset="0.1851" stop-color="#FFD744"/>
+                                        <stop offset="0.3981" stop-color="#FFD744"/>
+                                        <stop offset="0.561" stop-color="#FCF4AE"/>
+                                        <stop offset="0.6792" stop-color="#FFD744"/>
+                                        <stop offset="0.75" stop-color="#A6761A"/>
+                                        <stop offset="0.8802" stop-color="#FFD744"/>
+                                        <stop offset="0.967" stop-color="#FCF4AE"/>
+                                        <stop offset="1" stop-color="#FFD744"/>
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear" x1="93.1035" y1="40.5172" x2="58.6207" y2="108.621" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FFD744"/>
+                                        <stop offset="0.183767" stop-color="#FCF4AE"/>
+                                        <stop offset="0.571705" stop-color="#FFD744"/>
+                                        <stop offset="1" stop-color="#A6761A"/>
+                                        </linearGradient>
+                                        <clipPath id="clip0">
+                                        <rect width="150" height="150" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+
+
+
+                                </div>
+
+                                <h4 class="text-white text-center">Место в рейтинге </h4>
+                                <p class=" text-center">Место в рейтинге по всем районам региона</p>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slide-item p-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="circle-progress-item mb-3">
+                                    <svg class="progress-ring" width="150" height="150">
+                 
+                                        <circle class="progress-ring-bg"  stroke="rgba(255,255,255,0.1)" stroke-width="20" cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <circle class="progress-ring-circle"  gradientUnits="userSpaceOnUse" gradientTransform="translate(75 75) rotate(-90) scale(75)" percent="20" stroke="#48b7c7" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <text class="text"  x="50%" y="50%" fill="white" stroke="white"   dominant-baseline="middle" text-anchor="middle"></text>
+                                        <circle class="progress-ring-dash"  stroke="#414a7c" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                       
+                                    </svg>
+                                </div>
+
+                                <h4 class="text-white text-center">Место в рейтинге </h4>
+                                <p class=" text-center">Место в рейтинге по всем районам региона</p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="slide-item p-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="circle-progress-item mb-3">
+                                    <svg class="progress-ring" width="150" height="150">
+                 
+                                        <circle class="progress-ring-bg"  stroke="rgba(255,255,255,0.1)" stroke-width="20" cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <circle class="progress-ring-circle"  gradientUnits="userSpaceOnUse" gradientTransform="translate(75 75) rotate(-90) scale(75)" percent="41.5" stroke="#48b7c7" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <text class="text"  x="50%" y="50%" fill="white" stroke="white"   dominant-baseline="middle" text-anchor="middle"></text>
+                                        <circle class="progress-ring-dash"  stroke="#414a7c" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                       
+                                    </svg>
+                                </div>
+
+                                <h4 class="text-white text-center">Место в рейтинге </h4>
+                                <p class=" text-center">Место в рейтинге по всем районам региона</p>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slide-item p-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="circle-progress-item mb-3">
+                                    <svg class="progress-ring" width="150" height="150">
+                 
+                                        <circle class="progress-ring-bg"  stroke="rgba(255,255,255,0.1)" stroke-width="20" cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <circle class="progress-ring-circle"  gradientUnits="userSpaceOnUse" gradientTransform="translate(75 75) rotate(-90) scale(75)" percent="41.5" stroke="#48b7c7" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <text class="text"  x="50%" y="50%" fill="white" stroke="white"   dominant-baseline="middle" text-anchor="middle"></text>
+                                        <circle class="progress-ring-dash"  stroke="#414a7c" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                       
+                                    </svg>
+                                </div>
+
+                                <h4 class="text-white text-center">Место в рейтинге </h4>
+                                <p class=" text-center">Место в рейтинге по всем районам региона</p>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slide-item p-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="circle-progress-item mb-3">
+                                    <svg class="progress-ring" width="150" height="150">
+                 
+                                        <circle class="progress-ring-bg"  stroke="rgba(255,255,255,0.1)" stroke-width="20" cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <circle class="progress-ring-circle"  gradientUnits="userSpaceOnUse" gradientTransform="translate(75 75) rotate(-90) scale(75)" percent="41.5" stroke="#48b7c7" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <text class="text"  x="50%" y="50%" fill="white" stroke="white"   dominant-baseline="middle" text-anchor="middle"></text>
+                                        <circle class="progress-ring-dash"  stroke="#414a7c" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                       
+                                    </svg>
+                                </div>
+
+                                <h4 class="text-white text-center">Место в рейтинге </h4>
+                                <p class=" text-center">Место в рейтинге по всем районам региона</p>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slide-item p-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="circle-progress-item mb-3">
+                                    <svg class="progress-ring" width="150" height="150">
+                 
+                                        <circle class="progress-ring-bg"  stroke="rgba(255,255,255,0.1)" stroke-width="20" cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <circle class="progress-ring-circle"  gradientUnits="userSpaceOnUse" gradientTransform="translate(75 75) rotate(-90) scale(75)" percent="41.5" stroke="#48b7c7" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <text class="text"  x="50%" y="50%" fill="white" stroke="white"   dominant-baseline="middle" text-anchor="middle"></text>
+                                        <circle class="progress-ring-dash"  stroke="#414a7c" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                       
+                                    </svg>
+                                </div>
+
+                                <h4 class="text-white text-center">Место в рейтинге </h4>
+                                <p class=" text-center">Место в рейтинге по всем районам региона</p>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slide-item p-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="circle-progress-item mb-3">
+                                    <svg class="progress-ring" width="150" height="150">
+                 
+                                        <circle class="progress-ring-bg"  stroke="rgba(255,255,255,0.1)" stroke-width="20" cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <circle class="progress-ring-circle"  gradientUnits="userSpaceOnUse" gradientTransform="translate(75 75) rotate(-90) scale(75)" percent="41.5" stroke="#48b7c7" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <text class="text"  x="50%" y="50%" fill="white" stroke="white"   dominant-baseline="middle" text-anchor="middle"></text>
+                                        <circle class="progress-ring-dash"  stroke="#414a7c" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                       
+                                    </svg>
+                                </div>
+
+                                <h4 class="text-white text-center">Место в рейтинге </h4>
+                                <p class=" text-center">Место в рейтинге по всем районам региона</p>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slide-item p-4 d-flex flex-column justify-content-center align-content-center align-items-center">
+
+                                <div class="circle-progress-item mb-3">
+                                    <svg class="progress-ring" width="150" height="150">
+                 
+                                        <circle class="progress-ring-bg"  stroke="rgba(255,255,255,0.1)" stroke-width="20" cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <circle class="progress-ring-circle"  gradientUnits="userSpaceOnUse" gradientTransform="translate(75 75) rotate(-90) scale(75)" percent="41.5" stroke="#48b7c7" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                        <text class="text"  x="50%" y="50%" fill="white" stroke="white"   dominant-baseline="middle" text-anchor="middle"></text>
+                                        <circle class="progress-ring-dash"  stroke="#414a7c" stroke-width="20"  cx="75" cy="75" r="65" fill="transparent" >
+                                        </circle>
+                                       
+                                    </svg>
+                                </div>
+
+                                <h4 class="text-white text-center">Место в рейтинге </h4>
+                                <p class=" text-center">Место в рейтинге по всем районам региона</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="top-sub-header">
+                    <div class="mb-5 d-flex justify-content-between align-items-center">
+                        <div class="left-item d-flex align-items-center align-content-center">
+                            <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.8387 0H17L6.16129 32H0L10.8387 0Z" fill="#48B7C7" />
+                  <path d="M21.8387 0H28L17.1613 32H11L21.8387 0Z" fill="#48B7C7" />
                 </svg>
+                            <h3 class="ml-2">Последние новости</h3>
+                        </div>
+
+                        <div class="right-item">
+                            <a href="#!"> Все индикаторы </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="test-line-progressbar">
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 mb-4">
+                            <div class="progres-box">
+                                <div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">
+                                    <div class="left-title">
+                                        <h4 class="text-white"> Соблюдение актов законодательства </h4>
+                                    </div>
+                                    <div class="right-info d-flex">
+                                        <div class="with-border p-2 px-3 ml-2">
+                                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white"/>
+                                                </svg>
+
+                                        </div>
+                                        <div class="with-border p-2 ml-2 px-3 text-white font-weight-bold">
+                                            62.5
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-line-wrap p-2">
+
+                                    <div class="progress-line d-flex justify-content-end" percent="100">
+                                        <div class="stick-wrap">
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+
+                                        </div>
+
+                                        <div class="progress-line-inner">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+                            <div class="progres-box">
+                                <div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">
+                                    <div class="left-title">
+                                        <h4 class="text-white"> Соблюдение актов законодательства </h4>
+                                    </div>
+                                    <div class="right-info d-flex">
+                                        <div class="with-border p-2 px-3 ml-2">
+                                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white"/>
+                                                </svg>
+
+                                        </div>
+                                        <div class="with-border p-2 ml-2 px-3 text-white font-weight-bold">
+                                            62.5
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-line-wrap p-2">
+                                    <div class="progress-line d-flex justify-content-end" percent="62.5">
+                                        <div class="stick-wrap">
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+
+                                        </div>
+                                        <div class="progress-line-inner">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+                            <div class="progres-box">
+                                <div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">
+                                    <div class="left-title">
+                                        <h4 class="text-white"> Соблюдение актов законодательства </h4>
+                                    </div>
+                                    <div class="right-info d-flex">
+                                        <div class="with-border p-2 px-3 ml-2">
+                                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white"/>
+                                                </svg>
+
+                                        </div>
+                                        <div class="with-border p-2 ml-2 px-3 text-white font-weight-bold">
+                                            62.5
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-line-wrap p-2">
+                                    <div class="progress-line d-flex justify-content-end" percent="62.5">
+                                        <div class="stick-wrap">
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+
+                                        </div>
+                                        <div class="progress-line-inner">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+                            <div class="progres-box">
+                                <div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">
+                                    <div class="left-title">
+                                        <h4 class="text-white"> Соблюдение актов законодательства </h4>
+                                    </div>
+                                    <div class="right-info d-flex">
+                                        <div class="with-border p-2 px-3 ml-2">
+                                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white"/>
+                                                </svg>
+
+                                        </div>
+                                        <div class="with-border p-2 ml-2 px-3 text-white font-weight-bold">
+                                            62.5
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-line-wrap p-2">
+                                    <div class="progress-line d-flex justify-content-end" percent="62.5">
+                                        <div class="stick-wrap">
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+
+                                        </div>
+                                        <div class="progress-line-inner">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+                            <div class="progres-box">
+                                <div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">
+                                    <div class="left-title">
+                                        <h4 class="text-white"> Соблюдение актов законодательства </h4>
+                                    </div>
+                                    <div class="right-info d-flex">
+                                        <div class="with-border p-2 px-3 ml-2">
+                                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white"/>
+                                                </svg>
+
+                                        </div>
+                                        <div class="with-border p-2 ml-2 px-3 text-white font-weight-bold">
+                                            62.5
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-line-wrap p-2">
+                                    <div class="progress-line d-flex justify-content-end" percent="62.5">
+                                        <div class="stick-wrap">
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+
+                                        </div>
+                                        <div class="progress-line-inner">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+                            <div class="progres-box">
+                                <div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">
+                                    <div class="left-title">
+                                        <h4 class="text-white"> Соблюдение актов законодательства </h4>
+                                    </div>
+                                    <div class="right-info d-flex">
+                                        <div class="with-border p-2 px-3 ml-2">
+                                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white"/>
+                                                </svg>
+
+                                        </div>
+                                        <div class="with-border p-2 ml-2 px-3 text-white font-weight-bold">
+                                            62.5
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-line-wrap p-2">
+                                    <div class="progress-line d-flex justify-content-end" percent="62.5">
+                                        <div class="stick-wrap">
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+
+                                        </div>
+                                        <div class="progress-line-inner">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="col-md-6 col-sm-12 mb-4">
+                            <div class="progres-box">
+                                <div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">
+                                    <div class="left-title">
+                                        <h4 class="text-white"> Соблюдение актов законодательства </h4>
+                                    </div>
+                                    <div class="right-info d-flex">
+                                        <div class="with-border p-2 px-3 ml-2">
+                                            <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white"/>
+                                                </svg>
+
+                                        </div>
+                                        <div class="with-border p-2 ml-2 px-3 text-white font-weight-bold">
+                                            62.5
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-line-wrap p-2">
+                                    <div class="progress-line d-flex justify-content-end" percent="62.5">
+                                        <div class="stick-wrap">
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+                                            <div class="stick"></div>
+
+                                        </div>
+                                        <div class="progress-line-inner">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
 
             </div>
 
@@ -211,6 +768,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 
     <script src="./js/index.js" async defer></script>
 </body>

@@ -9,7 +9,7 @@ body {
 }
 
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .custom-container {
@@ -732,5 +732,122 @@ footer p {
 
 .region-page .top-sub-header .right-item button:hover {
   cursor: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .region-page .top-sub-header .right-item button {
+    padding: 5px 8px;
+  }
+}
+
+.region-page .region-body .progress-ring .progress-ring-circle {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.region-page .region-body .progress-ring .progress-ring-dash {
+  stroke-dasharray: 2 50;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-95deg);
+          transform: rotate(-95deg);
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.region-page .region-body .reagion-card-carousel .slide-item {
+  background: linear-gradient(43.39deg, #414A7C 0%, rgba(67, 78, 141, 0.2) 100%);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 16px;
+}
+
+.region-page .region-body .reagion-card-carousel .slide-item p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.region-page .region-body .reagion-card-carousel .slide-item .circle-progress-item-number {
+  position: relative;
+}
+
+.region-page .region-body .reagion-card-carousel .slide-item .circle-progress-item-number .number {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  color: #FED960;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.region-page .region-body .test-line-progressbar .progres-box .top-info-progress .left-title h4 {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .region-page .region-body .test-line-progressbar .progres-box .top-info-progress .left-title h4 {
+    font-size: 16px;
+  }
+}
+
+.region-page .region-body .test-line-progressbar .progres-box .top-info-progress .right-info {
+  font-size: 25px;
+}
+
+.region-page .region-body .test-line-progressbar .progres-box .top-info-progress .right-info .with-border {
+  border: 3px solid #48B7C7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.region-page .region-body .test-line-progressbar .progres-box .progress-line-wrap {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.region-page .region-body .test-line-progressbar .progres-box .progress-line-wrap .progress-line {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.62%, #F6236F), color-stop(33.13%, #FFD231), color-stop(68.45%, #59DCA5), color-stop(100.62%, #00A4AC));
+  background: linear-gradient(90deg, #F6236F -0.62%, #FFD231 33.13%, #59DCA5 68.45%, #00A4AC 100.62%);
+  content: " ";
+  height: inherit;
+  position: relative;
+}
+
+.region-page .region-body .test-line-progressbar .progres-box .progress-line-wrap .progress-line .stick-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.region-page .region-body .test-line-progressbar .progres-box .progress-line-wrap .progress-line .stick-wrap .stick {
+  height: 30px;
+  width: 3px;
+  background-color: #454e83;
+}
+
+.region-page .region-body .test-line-progressbar .progres-box .progress-line-wrap .progress-line .progress-line-inner {
+  background-color: #454e83;
+  height: 30px;
+  width: 25px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.region-page .text {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
