@@ -1,4 +1,8 @@
 $(document).ready(function() {
+   
+
+    
+   
     $('.home-page-owl-carousel').owlCarousel({
 
         margin: 10,
@@ -51,7 +55,7 @@ $(document).ready(function() {
 
         const radius = circle.r.baseVal.value;
         const circumference = 2 * Math.PI * radius;
-        const getPercent = circle.getAttribute('percent');
+        const getPercent = 100 - circle.getAttribute('percent');
         var animationNumber = 0;
 
 
@@ -60,8 +64,8 @@ $(document).ready(function() {
 
 
         function setProgress(percent) {
-            const offset = circumference - percent / 100 * circumference;
-            circle.style.strokeDashoffset = offset;
+            const offset = circumference - (percent) / 100 * circumference;
+            circle.style.strokeDashoffset = -offset;
 
             // $(circle).next('text').text(`${percent}%`);
 
@@ -72,9 +76,9 @@ $(document).ready(function() {
 
                 animationNumber += 1;
 
-                if (animationNumber > percent) {
+                if (animationNumber > (100 - percent)) {
                     clearInterval(time);
-                    $(circle).next('text').text(`${percent}%`);
+                    $(circle).next('text').text(`${(100 - percent)}%`);
                 }
 
             }, 100);
