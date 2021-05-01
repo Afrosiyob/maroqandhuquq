@@ -9,7 +9,7 @@ body {
 }
 
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .modal-content {
@@ -17,7 +17,15 @@ body {
   border: none;
 }
 
-.progress-ring .progress-ring-circle {
+.test-wrap-svg-box-index-page {
+  position: relative !important;
+}
+
+.test-wrap-svg-box-index-page .test-circle-box {
+  position: absolute;
+}
+
+.test-wrap-svg-box-index-page .test-circle-box .progress-ring .progress-ring-circle {
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotate(-90deg);
@@ -26,7 +34,7 @@ body {
   transition: all 2s linear;
 }
 
-.progress-ring .progress-ring-dash {
+.test-wrap-svg-box-index-page .test-circle-box .progress-ring .progress-ring-dash {
   stroke-dasharray: 2 50;
   -webkit-transform-origin: center;
           transform-origin: center;
@@ -34,6 +42,35 @@ body {
           transform: rotate(-95deg);
   -webkit-transition: all 2s linear;
   transition: all 2s linear;
+}
+
+.test-wrap-svg-box-index-page .test-svg-box {
+  width: 120px;
+  height: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background: conic-gradient(#f6236f 0%, #ffd231 33.33%, #59dca5 68.23%, #00a4ac 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.test-wrap-svg-box-index-page .test-svg-box .test-svg-box-inner {
+  width: 85px;
+  height: 85px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #323e71;
+  border-radius: 50%;
 }
 
 .modal-body {
@@ -990,6 +1027,10 @@ footer p {
   }
 }
 
+.region-page .region-body .test-line-progressbar .progres-box .top-info-progress .left-title:hover {
+  cursor: pointer;
+}
+
 .region-page .region-body .test-line-progressbar .progres-box .top-info-progress .right-info {
   font-size: 25px;
 }
@@ -1033,6 +1074,75 @@ footer p {
 }
 
 .region-page .region-body .test-line-progressbar .progres-box .progress-line-wrap .progress-line .progress-line-inner {
+  background-color: #454e83;
+  height: 30px;
+  width: 25px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info {
+  display: none;
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .top-info-progress .left-title h4 {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .region-page .region-body .test-line-progressbar .under-progress-box-info .top-info-progress .left-title h4 {
+    font-size: 16px;
+  }
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .top-info-progress .left-title:hover {
+  cursor: pointer;
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .top-info-progress .right-info {
+  font-size: 25px;
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .top-info-progress .right-info .with-border {
+  border: 3px solid #48b7c7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .progress-line-wrap {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .progress-line-wrap .progress-line {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.62%, #f6236f), color-stop(33.13%, #ffd231), color-stop(68.45%, #59dca5), color-stop(100.62%, #00a4ac));
+  background: linear-gradient(90deg, #f6236f -0.62%, #ffd231 33.13%, #59dca5 68.45%, #00a4ac 100.62%);
+  content: " ";
+  height: inherit;
+  position: relative;
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .progress-line-wrap .progress-line .stick-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .progress-line-wrap .progress-line .stick-wrap .stick {
+  height: 30px;
+  width: 3px;
+  background-color: #454e83;
+}
+
+.region-page .region-body .test-line-progressbar .under-progress-box-info .progress-line-wrap .progress-line .progress-line-inner {
   background-color: #454e83;
   height: 30px;
   width: 25px;
@@ -1257,6 +1367,10 @@ footer p {
   }
 }
 
+.rating-page .rating-body .test-line-progressbar .progres-box .top-info-progress .left-title h4:hover {
+  cursor: pointer;
+}
+
 .rating-page .rating-body .test-line-progressbar .progres-box .top-info-progress .right-info {
   font-size: 25px;
 }
@@ -1300,6 +1414,72 @@ footer p {
 }
 
 .rating-page .rating-body .test-line-progressbar .progres-box .progress-line-wrap .progress-line .progress-line-inner {
+  background-color: #454e83;
+  height: 30px;
+  width: 25px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info {
+  width: 80%;
+  display: none;
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info .top-info-progress .left-title h4 {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .rating-page .rating-body .test-line-progressbar .under-progress-box-info .top-info-progress .left-title h4 {
+    font-size: 16px;
+  }
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info .top-info-progress .right-info {
+  font-size: 25px;
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info .top-info-progress .right-info .with-border {
+  border: 3px solid #48b7c7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info .progress-line-wrap {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info .progress-line-wrap .progress-line {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.62%, #f6236f), color-stop(33.13%, #ffd231), color-stop(68.45%, #59dca5), color-stop(100.62%, #00a4ac));
+  background: linear-gradient(90deg, #f6236f -0.62%, #ffd231 33.13%, #59dca5 68.45%, #00a4ac 100.62%);
+  content: " ";
+  height: inherit;
+  position: relative;
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info .progress-line-wrap .progress-line .stick-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info .progress-line-wrap .progress-line .stick-wrap .stick {
+  height: 30px;
+  width: 3px;
+  background-color: #454e83;
+}
+
+.rating-page .rating-body .test-line-progressbar .under-progress-box-info .progress-line-wrap .progress-line .progress-line-inner {
   background-color: #454e83;
   height: 30px;
   width: 25px;
