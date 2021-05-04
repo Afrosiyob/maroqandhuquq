@@ -231,12 +231,12 @@ $( document ).ready( function () {
             '</div>' +
 
             ' </div>' +
-            '<div class="under-progress-box-info mt-3">' +
+            '<div class="under-progress-box-info mt-3 p-5">' +
             element.subtitle.map( ( innerElement, index ) => (
                 '<div class="mb-3">' +
                 '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">' +
                 '<div class="left-title">' +
-                '<h4 class="text-white">' + innerElement.title + '</h4>' +
+                '<h5 class="text-white">' + innerElement.title + '</h5>' +
                 '</div>' +
                 '<div class="right-info d-flex">' +
                 '<div class="with-border p-2 px-3 ml-2">' +
@@ -404,6 +404,14 @@ $( document ).ready( function () {
             title: "9. Вобкент тумани",
             percent: 7.6
         },
+        {
+            title: "10. Шофиркон тумани",
+            percent: 7.2
+        },
+        {
+            title: "11. Шофиркон тумани",
+            percent: 7.6
+        },
 
     ]
 
@@ -436,6 +444,7 @@ $( document ).ready( function () {
         margin: 20,
         nav: true,
         autoHeight: true,
+        autoWidth: true,
         items: 5,
         responsive: {
             0: {
