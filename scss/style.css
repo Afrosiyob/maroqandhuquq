@@ -351,7 +351,6 @@ footer p {
 }
 
 .home-page-section-one .inner-item {
-  height: 288px;
   background: linear-gradient(43.39deg, #414a7c 0%, rgba(67, 78, 141, 0.2) 100%);
   /* blur */
   -webkit-backdrop-filter: blur(25px);
@@ -377,6 +376,25 @@ footer p {
 .home-page-section-one .inner-item .under-info p:nth-child(2) {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.home-page-section-one .inner-item .under-info .last-info a {
+  padding: 5px 10px;
+  border: 2px solid rgba(177, 224, 231, 0.6);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+
+.home-page-section-one .inner-item .under-info .last-info a:hover {
+  color: #48b7c7;
+  border-color: #48b7c7;
 }
 
 @media screen and (max-width: 920px) {
@@ -843,6 +861,25 @@ footer p {
 .home-page-news-slider .inner-item-first .under-info p:nth-child(2) {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.home-page-news-slider .inner-item-first .under-info .last-info a {
+  padding: 5px 10px;
+  border: 2px solid rgba(177, 224, 231, 0.6);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+
+.home-page-news-slider .inner-item-first .under-info .last-info a:hover {
+  color: #48b7c7;
+  border-color: #48b7c7;
 }
 
 @media screen and (max-width: 920px) {
@@ -1652,5 +1689,373 @@ footer p {
   border: 2px solid #48b7c7;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.indicator-page .top-sub-header .right-item button {
+  border: 2px solid grey;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: transparent;
+  padding: 10px 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.indicator-page .top-sub-header .right-item button i {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.indicator-page .top-sub-header .right-item button:hover {
+  cursor: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .indicator-page .top-sub-header .right-item button {
+    padding: 5px 8px;
+  }
+}
+
+.indicator-page .progres-box .top-info-progress .left-title h4 {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .indicator-page .progres-box .top-info-progress .left-title h4 {
+    font-size: 16px;
+  }
+}
+
+.indicator-page .progres-box .top-info-progress .left-title:hover {
+  cursor: pointer;
+}
+
+.indicator-page .progres-box .top-info-progress .right-info {
+  font-size: 25px;
+}
+
+.indicator-page .progres-box .top-info-progress .right-info .with-border {
+  border: 3px solid #48b7c7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.indicator-page .progres-box .progress-line-wrap {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.indicator-page .progres-box .progress-line-wrap .progress-line {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.62%, #f6236f), color-stop(33.13%, #ffd231), color-stop(68.45%, #59dca5), color-stop(100.62%, #00a4ac));
+  background: linear-gradient(90deg, #f6236f -0.62%, #ffd231 33.13%, #59dca5 68.45%, #00a4ac 100.62%);
+  content: " ";
+  height: inherit;
+  position: relative;
+}
+
+.indicator-page .progres-box .progress-line-wrap .progress-line .stick-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.indicator-page .progres-box .progress-line-wrap .progress-line .stick-wrap .stick {
+  height: 30px;
+  width: 3px;
+  background-color: #454e83;
+}
+
+.indicator-page .progres-box .progress-line-wrap .progress-line .progress-line-inner {
+  background-color: #454e83;
+  height: 30px;
+  width: 25px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.indicator-page .under-progress-box-info {
+  display: none;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.indicator-page .under-progress-box-info .top-info-progress .left-title h4 {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .indicator-page .under-progress-box-info .top-info-progress .left-title h4 {
+    font-size: 16px;
+  }
+}
+
+.indicator-page .under-progress-box-info .top-info-progress .left-title:hover {
+  cursor: pointer;
+}
+
+.indicator-page .under-progress-box-info .top-info-progress .right-info {
+  font-size: 25px;
+}
+
+.indicator-page .under-progress-box-info .top-info-progress .right-info .with-border {
+  border: 3px solid #48b7c7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.indicator-page .under-progress-box-info .progress-line-wrap {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.indicator-page .under-progress-box-info .progress-line-wrap .progress-line {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.62%, #f6236f), color-stop(33.13%, #ffd231), color-stop(68.45%, #59dca5), color-stop(100.62%, #00a4ac));
+  background: linear-gradient(90deg, #f6236f -0.62%, #ffd231 33.13%, #59dca5 68.45%, #00a4ac 100.62%);
+  content: " ";
+  height: inherit;
+  position: relative;
+}
+
+.indicator-page .under-progress-box-info .progress-line-wrap .progress-line .stick-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.indicator-page .under-progress-box-info .progress-line-wrap .progress-line .stick-wrap .stick {
+  height: 30px;
+  width: 3px;
+  background-color: #454e83;
+}
+
+.indicator-page .under-progress-box-info .progress-line-wrap .progress-line .progress-line-inner {
+  background-color: #454e83;
+  height: 30px;
+  width: 25px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.indicator-page .indicator-page-item {
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@media only screen and (max-width: 768px) {
+  .indicator-page .indicator-page-item {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .indicator-page .indicator-col .indicator-col {
+    padding: 0 !important;
+  }
+}
+
+.indicator-second .indicator-card-carousel .test-wrap-svg-box {
+  position: relative !important;
+}
+
+.indicator-second .indicator-card-carousel .test-wrap-svg-box .test-circle-box {
+  position: absolute;
+}
+
+.indicator-second .indicator-card-carousel .test-wrap-svg-box .test-svg-box {
+  width: 150px;
+  height: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background: conic-gradient(#f6236f 0%, #ffd231 33.33%, #59dca5 68.23%, #00a4ac 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.indicator-second .indicator-card-carousel .test-wrap-svg-box .test-svg-box .test-svg-box-inner {
+  width: 110px;
+  height: 110px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #323e71;
+  border-radius: 50%;
+}
+
+.indicator-second .indicator-card-carousel .progress-ring .progress-ring-circle {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.indicator-second .indicator-card-carousel .progress-ring .progress-ring-dash {
+  stroke-dasharray: 2 50;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-92deg);
+          transform: rotate(-92deg);
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.indicator-second .indicator-card-carousel .slide-item {
+  background: linear-gradient(43.39deg, #414a7c 0%, rgba(67, 78, 141, 0.2) 100%);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 16px;
+}
+
+.indicator-second .indicator-card-carousel .slide-item p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.indicator-second .indicator-card-carousel .slide-item .circle-progress-item-number {
+  position: relative;
+}
+
+.indicator-second .indicator-card-carousel .slide-item .circle-progress-item-number .number {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  color: #fed960;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.indicator-second .top-sub-header .right-item button {
+  border: 2px solid grey;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-color: transparent;
+  padding: 10px 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.indicator-second .top-sub-header .right-item button i {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.indicator-second .top-sub-header .right-item button:hover {
+  cursor: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .indicator-second .top-sub-header .right-item button {
+    padding: 5px 8px;
+  }
+}
+
+.indicator-second .progres-box .top-info-progress .left-title h4 {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .indicator-second .progres-box .top-info-progress .left-title h4 {
+    font-size: 16px;
+  }
+}
+
+.indicator-second .progres-box .top-info-progress .left-title:hover {
+  cursor: pointer;
+}
+
+.indicator-second .progres-box .top-info-progress .right-info {
+  font-size: 25px;
+}
+
+.indicator-second .progres-box .top-info-progress .right-info .with-border {
+  border: 3px solid #48b7c7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.indicator-second .progres-box .progress-line-wrap {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.indicator-second .progres-box .progress-line-wrap .progress-line {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.62%, #f6236f), color-stop(33.13%, #ffd231), color-stop(68.45%, #59dca5), color-stop(100.62%, #00a4ac));
+  background: linear-gradient(90deg, #f6236f -0.62%, #ffd231 33.13%, #59dca5 68.45%, #00a4ac 100.62%);
+  content: " ";
+  height: inherit;
+  position: relative;
+}
+
+.indicator-second .progres-box .progress-line-wrap .progress-line .stick-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.indicator-second .progres-box .progress-line-wrap .progress-line .stick-wrap .stick {
+  height: 30px;
+  width: 3px;
+  background-color: #454e83;
+}
+
+.indicator-second .progres-box .progress-line-wrap .progress-line .progress-line-inner {
+  background-color: #454e83;
+  height: 30px;
+  width: 25px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.indicator-second .indicator-two-under-info {
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 /*# sourceMappingURL=style.css.map */
