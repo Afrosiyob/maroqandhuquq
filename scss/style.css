@@ -9,7 +9,7 @@ body {
 }
 
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .modal-content {
@@ -1063,6 +1063,16 @@ footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .region-page .region-body .test-line-progressbar .progres-box .progress-line-wrap {
@@ -1132,6 +1142,16 @@ footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .region-page .region-body .test-line-progressbar .under-progress-box-info .progress-line-wrap {
@@ -1465,6 +1485,27 @@ footer p {
   cursor: pointer;
 }
 
+.rating-page .rating-body .test-line-progressbar .progres-box .top-info-progress .left-title h4 .progress-inner-left-number {
+  position: relative;
+}
+
+.rating-page .rating-body .test-line-progressbar .progres-box .top-info-progress .left-title h4 .progress-inner-left-number .number-circle {
+  position: absolute;
+  z-index: 2;
+  color: gold;
+  left: 43%;
+  top: 58%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .rating-page .rating-body .test-line-progressbar .progres-box .top-info-progress .left-title h4 .progress-inner-left-number .number-circle {
+    top: 50%;
+    font-size: 20px;
+  }
+}
+
 .rating-page .rating-body .test-line-progressbar .progres-box .top-info-progress .right-info {
   font-size: 25px;
 }
@@ -1474,6 +1515,16 @@ footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rating-page .rating-body .test-line-progressbar .progres-box .progress-line-wrap {
@@ -1543,6 +1594,16 @@ footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .rating-page .rating-body .test-line-progressbar .under-progress-box-info .progress-line-wrap {
@@ -1741,6 +1802,16 @@ footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .indicator-page .progres-box .progress-line-wrap {
@@ -1814,6 +1885,16 @@ footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .indicator-page .under-progress-box-info .progress-line-wrap {
@@ -2009,6 +2090,16 @@ footer p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+  width: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .indicator-second .progres-box .progress-line-wrap {
