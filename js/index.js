@@ -276,7 +276,7 @@ $(document).ready(function() {
                 '<div class="progres-box"> ' +
                 '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3"> ' +
                 '<div class="left-title"> ' +
-                '<h4 class="text-white">  ' +
+                `<h4 class="text-white" onclick="goDistrict('${element.url}')">  ` +
                 '<span class="progress-inner-left-number">' +
                 `<div class="number-circle"> ${index + 1}  </div>` +
                 '<svg width="40" height="40" class="mr-2" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">' +
@@ -370,42 +370,52 @@ $(document).ready(function() {
     const districtsNavoi = [{
             title: "1. Кармана тумани",
             percent: 8.4,
+            url: "./indicator.html",
         },
         {
             title: "2. Зарафшон шаҳри",
             percent: 8.3,
+            url: "./indicator.html",
         },
         {
             title: "3. Навбаҳор тумани",
             percent: 8.0,
+            url: "./indicator.html",
         },
         {
             title: "4. Нурота тумани",
             percent: 7.9,
+            url: "./indicator.html",
         },
         {
             title: "5. Конимех тумани",
             percent: 7.8,
+            url: "./indicator.html",
         },
         {
             title: "6. Навоий шаҳри",
             percent: 7.6,
+            url: "./indicator.html",
         },
         {
             title: "7. Қизилтепа тумани",
             percent: 7.5,
+            url: "./indicator.html",
         },
         {
             title: "8. Томди тумани",
             percent: 7.4,
+            url: "./indicator.html",
         },
         {
             title: "9. Хатирчи тумани",
             percent: 7.3,
+            url: "./indicator.html",
         },
         {
             title: "10. Учқудуқ тумани",
             percent: 7.2,
+            url: "./indicator.html",
         },
     ];
 
