@@ -93,10 +93,8 @@ body {
   }
 }
 
-.modal-body .modal-body-content .top-info .right-item {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+.modal-body .modal-body-content .top-info .right-item a {
+  padding: 5px 10px;
   border: 2px solid #48b7c7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,6 +107,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: white;
+  text-decoration: none;
+}
+
+.modal-body .modal-body-content .top-info .right-item a:hover {
+  background-color: #48b7c7;
 }
 
 .modal-body .modal-body-content .under-info .left-item {
@@ -317,7 +323,7 @@ footer p {
 
 .home-page-header h3 {
   color: white;
-  font-size: 34px;
+  font-size: 44px;
   line-height: 46px;
   text-align: center;
   text-transform: uppercase;
@@ -328,7 +334,7 @@ footer p {
   text-align: center;
   margin: 24px 0px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 28px;
   color: white;
 }
 
@@ -351,7 +357,7 @@ footer p {
 }
 
 .home-page-section-one .inner-item {
-  height: 400px;
+  height: 370px;
   background: linear-gradient(43.39deg, #414a7c 0%, rgba(67, 78, 141, 0.2) 100%);
   /* blur */
   -webkit-backdrop-filter: blur(25px);
@@ -365,6 +371,11 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -379,7 +390,18 @@ footer p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.home-page-section-one .inner-item .under-info .last-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .home-page-section-one .inner-item .under-info .last-info a {
+  width: 150px;
+  text-align: center;
   padding: 5px 10px;
   border: 2px solid rgba(177, 224, 231, 0.6);
   -webkit-box-sizing: border-box;
@@ -1037,6 +1059,22 @@ footer p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 80px;
+}
+
+.region-page .region-body .test-line-progressbar .father-progress-box {
+  background-color: red !important;
+}
+
+.region-page .region-body .test-line-progressbar .father-progress-box:nth-child(2n-1) {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.region-page .region-body .test-line-progressbar .father-progress-box:nth-child(2n-1) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .region-page .region-body .test-line-progressbar .progres-box .top-info-progress .left-title h4 {
