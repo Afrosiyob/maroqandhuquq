@@ -471,54 +471,67 @@ $(document).ready(function () {
     {
       title: "1. Олот тумани",
       percent: 8.1,
+      url: "./indicator.html",
     },
     {
       title: "2. Қоровулбозор тумани",
       percent: 8.1,
+      url: "./indicator.html",
     },
     {
       title: "3. Ромитан тумани",
       percent: 8.0,
+      url: "./indicator.html",
     },
     {
       title: "4. Когон шаҳри",
       percent: 8.0,
+      url: "./indicator.html",
     },
     {
       title: "5. Қоракўл тумани",
       percent: 7.7,
+      url: "./indicator.html",
     },
     {
       title: "6. Пешку тумани",
       percent: 7.6,
+      url: "./indicator.html",
     },
     {
       title: "7. Ғиждувон тумани",
       percent: 7.6,
+      url: "./indicator.html",
     },
     {
       title: "8. Бухоро тумани",
       percent: 7.6,
+      url: "./indicator.html",
     },
     {
       title: "9. Вобкент тумани",
       percent: 7.6,
+      url: "./indicator.html",
     },
     {
       title: "10. Шофиркон тумани",
       percent: 7.2,
+      url: "./indicator.html",
     },
     {
       title: "11. Бухоро шаҳри",
       percent: 7.1,
+      url: "./indicator.html",
     },
     {
       title: "12. Когон тумани",
       percent: 7.1,
+      url: "./indicator.html",
     },
     {
       title: "13. Жондор тумани",
       percent: 6.9,
+      url: "./indicator.html",
     },
   ];
 
