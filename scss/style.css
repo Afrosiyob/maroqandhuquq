@@ -73,6 +73,10 @@ body {
   border-radius: 50%;
 }
 
+.test-wrap-svg-box-index-page .text {
+  font-size: 25px !important;
+}
+
 .modal-body {
   /* BG/gradient */
   background: linear-gradient(43.39deg, #414a7c 0%, rgba(67, 78, 141, 0.2) 100%);
@@ -1689,7 +1693,7 @@ footer p {
 }
 
 .rating-page .text {
-  font-size: 30px;
+  font-size: 35px !important;
 }
 
 .login-page {
@@ -2198,5 +2202,72 @@ footer p {
   padding: 30px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+.indicator-slider h6 {
+  color: #48b7c7 !important;
+}
+
+.under-nav {
+  background: rgba(255, 255, 255, 0.01);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  z-index: 99999;
+  padding-top: 10px;
+}
+
+.under-nav p {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  -webkit-animation-name: titleText;
+          animation-name: titleText;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  left: 100%;
+}
+
+@-webkit-keyframes titleText {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -20%;
+  }
+}
+
+@keyframes titleText {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -20%;
+  }
+}
+
+.modal-dialog {
+  max-width: 600px !important;
+  margin: 1.75rem auto;
 }
 /*# sourceMappingURL=style.css.map */
