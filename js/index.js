@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$( document ).ready( function () {
   const indicators = [
     {
       title: "Ҳудудларда қонун ҳужжатларига риоя қилиниши",
@@ -191,223 +191,221 @@ $(document).ready(function () {
     },
   ];
 
-  function addIndicators(data, indicatorProgress) {
-    data.map((element, index) => {
+  function addIndicators ( data, indicatorProgress ) {
+    data.map( ( element, index ) => {
       indicatorProgress.append(
         '<div class="col-md-6 col-sm-12 mb-5 indicator-col ">' +
-          '<div class="indicator-page-item">' +
-          '<div class="progres-box"> ' +
-          '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3"> ' +
-          '<div class="left-title"> ' +
-          '<h4 class="text-white"> ' +
-          element.title +
-          ' <i class="fas fa-angle-down"></i>  </h4>' +
-          "</div>" +
-          '<div class="right-info d-flex"> ' +
-          '<div class="with-border p-2 px-3 ml-2">' +
-          '<svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-          '<path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white" />' +
-          '<path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white" />' +
-          "</svg>" +
-          "</div>" +
-          '<div class="with-border p-2 ml-2 px-3 text-white font-weight-bold"> ' +
-          element.percent +
-          " </div>" +
-          "</div> " +
-          " </div>" +
-          '<div class="progress-line-wrap p-2">' +
-          '<div class="progress-line d-flex justify-content-end" percent=' +
-          element.percent +
-          ">" +
-          '<div class="stick-wrap">' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          "</div>" +
-          '<div class="progress-line-inner">' +
-          "</div>" +
-          "</div>" +
-          "</div>" +
-          " </div>" +
-          '<div class="under-progress-box-info mt-3 p-5">' +
-          element.subtitle.map(
-            (innerElement, index) =>
-              '<div class="mb-3">' +
-              '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">' +
-              '<div class="left-title">' +
-              '<h5 class="text-white">' +
-              innerElement.title +
-              "</h5>" +
-              "</div>" +
-              '<div class="right-info d-flex">' +
-              '<div class="with-border p-2 px-3 ml-2">' +
-              '<svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-              '<path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white" />' +
-              '<path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white" />' +
-              "</svg>" +
-              "</div>" +
-              '<div class="with-border p-2 ml-2 px-3 text-white font-weight-bold"> ' +
-              innerElement.percent +
-              "</div>" +
-              "</div>" +
-              "</div>" +
-              '<div class="progress-line-wrap p-2">' +
-              '<div class="progress-line d-flex justify-content-end" percent=' +
-              innerElement.percent +
-              ">" +
-              '<div class="stick-wrap">' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              '<div class="stick"></div>' +
-              "</div>" +
-              '<div class="progress-line-inner"></div>' +
-              "</div>" +
-              "</div>" +
-              "</div>"
-          ) +
-          "</div>" +
-          "</div>" +
-          " </div>"
+        '<div class="indicator-page-item">' +
+        '<div class="progres-box"> ' +
+        '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3"> ' +
+        '<div class="left-title"> ' +
+        '<h4 class="text-white"> ' +
+        element.title +
+        ' <i class="fas fa-angle-down"></i>  </h4>' +
+        "</div>" +
+        '<div class="right-info d-flex"> ' +
+        '<div class="with-border p-2 px-3 ml-2">' +
+        '<svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white" />' +
+        '<path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white" />' +
+        "</svg>" +
+        "</div>" +
+        '<div class="with-border p-2 ml-2 px-3 text-white font-weight-bold"> ' +
+        element.percent +
+        " </div>" +
+        "</div> " +
+        " </div>" +
+        '<div class="progress-line-wrap p-2">' +
+        '<div class="progress-line d-flex justify-content-end" percent=' +
+        element.percent +
+        ">" +
+        '<div class="stick-wrap">' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        "</div>" +
+        '<div class="progress-line-inner">' +
+        "</div>" +
+        "</div>" +
+        "</div>" +
+        " </div>" +
+        '<div class="under-progress-box-info mt-3 p-5">' +
+        element.subtitle.map(
+          ( innerElement, index ) =>
+            '<div class="mb-3">' +
+            '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">' +
+            '<div class="left-title">' +
+            '<h5 class="text-white">' +
+            innerElement.title +
+            "</h5>" +
+            "</div>" +
+            '<div class="right-info d-flex">' +
+            '<div class="with-border p-2 px-3 ml-2">' +
+            '<svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+            '<path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white" />' +
+            '<path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white" />' +
+            "</svg>" +
+            "</div>" +
+            '<div class="with-border p-2 ml-2 px-3 text-white font-weight-bold"> ' +
+            innerElement.percent +
+            "</div>" +
+            "</div>" +
+            "</div>" +
+            '<div class="progress-line-wrap p-2">' +
+            '<div class="progress-line d-flex justify-content-end" percent=' +
+            innerElement.percent +
+            ">" +
+            '<div class="stick-wrap">' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            '<div class="stick"></div>' +
+            "</div>" +
+            '<div class="progress-line-inner"></div>' +
+            "</div>" +
+            "</div>" +
+            "</div>"
+        ) +
+        "</div>" +
+        "</div>" +
+        " </div>"
       );
-    });
+    } );
   }
 
-  const indicatorsProgress = $("#indicatorProgressId .row");
+  const indicatorsProgress = $( "#indicatorProgressId .row" );
 
-  addIndicators(indicators, indicatorsProgress);
+  addIndicators( indicators, indicatorsProgress );
 
-  const indicatorItemOneId = $("#indicatorItemOneId .row");
+  const indicatorItemOneId = $( "#indicatorItemOneId .row" );
 
-  addIndicators(indicators, indicatorItemOneId);
+  addIndicators( indicators, indicatorItemOneId );
 
-  function addDistrictHandle(data, indicatorProgress) {
+  function addDistrictHandle ( data, indicatorProgress ) {
     var oldArr = data;
     var newArr = [];
-    for (i = 0; i < oldArr.length; i += 2) {
-      newArr.push(i);
+    for ( i = 0; i < oldArr.length; i += 2 ) {
+      newArr.push( i );
     }
-    for (i = 1; i < oldArr.length; i += 2) {
-      newArr.push(i);
+    for ( i = 1; i < oldArr.length; i += 2 ) {
+      newArr.push( i );
     }
 
-    console.log("eskisi", oldArr);
-    console.log("yangisi", newArr);
+    console.log( "eskisi", oldArr );
+    console.log( "yangisi", newArr );
 
-    data.map((element, index) => {
+    data.map( ( element, index ) => {
       indicatorProgress.append(
-        `<div class="col-md-6 col-sm-12 order-${
-          newArr[index] + 1
+        `<div class="col-md-6 col-sm-12 order-${ newArr[ index ] + 1
         }    mb-5 father-progress-box">` +
-          '<div class="progres-box"> ' +
-          '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3"> ' +
-          '<div class="left-title"> ' +
-          `<h4 class="text-white" onclick="goDistrict('${element.url}')">  ` +
-          `<span class="progress-inner-left-number" style=" display: ${
-            element.url ? "initial" : "none"
-          }">` +
-          `<div class="number-circle"> ${index + 1}  </div>` +
-          '<svg width="40" height="40" class="mr-2" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-          '<g clip-path="url(#clip0)">' +
-          '<path d="M20 3.5603C10.9303 3.5603 3.55933 10.9333 3.55933 20.0051C3.55933 29.0768 10.9303 36.4498 20 36.4498C29.0697 36.4498 36.4407 29.0768 36.4407 20.0051C36.4407 10.9333 29.0697 3.5603 20 3.5603Z" fill="#1A203D" stroke="#0D1125"/>' +
-          '<path d="M20 40C8.97751 40 0 31.0304 0 19.9949C0 8.95934 8.97751 0 20 0C31.0225 0 40 8.96957 40 20.0051C40 31.0407 31.0225 40 20 40ZM20 2.81258C10.5317 2.81258 2.82209 10.5242 2.82209 19.9949C2.82209 29.4656 10.5317 37.1772 20 37.1772C29.4683 37.1772 37.1779 29.4656 37.1779 19.9949C37.1779 10.5242 29.4683 2.81258 20 2.81258Z" fill="url(#paint0_linear)"/>' +
-          '<path d="M20 0.408936C9.20242 0.408936 0.419189 9.19441 0.419189 19.9947C0.419189 30.795 9.20242 39.5805 20 39.5805C30.7975 39.5805 39.5807 30.795 39.5807 19.9947C39.5807 9.19441 30.7975 0.408936 20 0.408936ZM20 37.5964C10.2965 37.5964 2.41305 29.7007 2.41305 20.0049C2.41305 10.299 10.3067 2.41354 20 2.41354C29.7034 2.41354 37.5869 10.3092 37.5869 20.0049C37.5869 29.7007 29.7034 37.5964 20 37.5964Z" fill="url(#paint1_linear)"/>' +
-          '<g filter="url(#filter0_d)">' +
-          '<path d="M23.5508 12.7705V15.0469H19.1475V17.4639C19.6982 16.8135 20.4072 16.4883 21.2744 16.4883C22.2529 16.4883 22.9912 16.7637 23.4893 17.3145C23.9932 17.8594 24.2451 18.9111 24.2451 20.4697V22.5C24.2451 23.5078 24.1953 24.249 24.0957 24.7236C24.002 25.1924 23.7969 25.6289 23.4805 26.0332C23.1641 26.4316 22.7217 26.7393 22.1533 26.9561C21.5908 27.167 20.9023 27.2725 20.0879 27.2725C19.1738 27.2725 18.3682 27.1143 17.6709 26.7979C16.9736 26.4756 16.4785 25.998 16.1855 25.3652C15.8926 24.7324 15.7461 23.7539 15.7461 22.4297V21.6562H19.2969V22.5439C19.2969 23.4639 19.3291 24.1172 19.3936 24.5039C19.458 24.8906 19.6807 25.084 20.0615 25.084C20.2373 25.084 20.3779 25.0283 20.4834 24.917C20.5947 24.8057 20.6533 24.6855 20.6592 24.5566C20.6709 24.4277 20.6826 23.8682 20.6943 22.8779V20.0566C20.6943 19.5234 20.6387 19.1602 20.5273 18.9668C20.416 18.7734 20.2314 18.6768 19.9736 18.6768C19.8096 18.6768 19.6719 18.7266 19.5605 18.8262C19.4492 18.9258 19.376 19.0342 19.3408 19.1514C19.3115 19.2627 19.2969 19.5264 19.2969 19.9424H15.7812L15.9307 12.7705H23.5508Z" fill="url(#paint2_linear)"/>' +
-          "</g>" +
-          "</g>" +
-          "<defs>" +
-          '<linearGradient id="paint0_linear" x1="24.9289" y1="0.891813" x2="13.2696" y2="46.073" gradientUnits="userSpaceOnUse">' +
-          '<stop stop-color="#FFD744"/>' +
-          '<stop offset="0.0678869" stop-color="#A6761A"/>' +
-          '<stop offset="0.1851" stop-color="#FFD744"/>' +
-          '<stop offset="0.3981" stop-color="#FFD744"/>' +
-          '<stop offset="0.561" stop-color="#FCF4AE"/>' +
-          '<stop offset="0.6792" stop-color="#FFD744"/>' +
-          '<stop offset="0.75" stop-color="#A6761A"/>' +
-          '<stop offset="0.8802" stop-color="#FFD744"/>' +
-          '<stop offset="0.967" stop-color="#FCF4AE"/>' +
-          '<stop offset="1" stop-color="#FFD744"/>' +
-          "</linearGradient>" +
-          '<linearGradient id="paint1_linear" x1="27.0924" y1="-5.79555" x2="13.4727" y2="43.7179" gradientUnits="userSpaceOnUse">' +
-          '<stop stop-color="#FFD744"/>' +
-          '<stop offset="0.0678869" stop-color="#A6761A"/>' +
-          '<stop offset="0.1851" stop-color="#FFD744"/>' +
-          '<stop offset="0.3981" stop-color="#FFD744"/>' +
-          '<stop offset="0.561" stop-color="#FCF4AE"/>' +
-          '<stop offset="0.6792" stop-color="#FFD744"/>' +
-          '<stop offset="0.75" stop-color="#A6761A"/>' +
-          '<stop offset="0.8802" stop-color="#FFD744"/>' +
-          '<stop offset="0.967" stop-color="#FCF4AE"/>' +
-          '<stop offset="1" stop-color="#FFD744"/>' +
-          "</linearGradient>" +
-          '<linearGradient id="paint2_linear" x1="24.8276" y1="10.8046" x2="15.6322" y2="28.9655" gradientUnits="userSpaceOnUse">' +
-          '<stop stop-color="#FFD744"/>' +
-          '<stop offset="0.183767" stop-color="#FCF4AE"/>' +
-          '<stop offset="0.571705" stop-color="#FFD744"/>' +
-          '<stop offset="1" stop-color="#A6761A"/>' +
-          "</linearGradient>" +
-          '<clipPath id="clip0">' +
-          '<rect width="40" height="40" fill="white"/>' +
-          "</clipPath>" +
-          "</defs>" +
-          "</svg>" +
-          "</span>" +
-          element.title +
-          "  </h4>" +
-          "</div>" +
-          '<div class="right-info d-flex"> ' +
-          '<div class="with-border p-2 px-3 ml-2">' +
-          '<svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-          '<path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white" />' +
-          '<path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white" />' +
-          "</svg>" +
-          "</div>" +
-          '<div class="with-border p-2 ml-2 px-3 text-white font-weight-bold"> ' +
-          element.percent +
-          " </div>" +
-          "</div> " +
-          " </div>" +
-          '<div class="progress-line-wrap p-2">' +
-          '<div class="progress-line d-flex justify-content-end" percent=' +
-          element.percent +
-          ">" +
-          '<div class="stick-wrap">' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          '<div class="stick"></div>' +
-          "</div>" +
-          '<div class="progress-line-inner">' +
-          "</div>" +
-          "</div>" +
-          "</div>" +
-          " </div>" +
-          " </div>"
+        '<div class="progres-box"> ' +
+        '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3"> ' +
+        '<div class="left-title"> ' +
+        `<h4 class="text-white" onclick="goDistrict('${ element.url }')">  ` +
+        `<span class="progress-inner-left-number" style=" display: ${ element.url ? "initial" : "none"
+        }">` +
+        `<div class="number-circle"> ${ index + 1 }  </div>` +
+        '<svg width="40" height="40" class="mr-2" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<g clip-path="url(#clip0)">' +
+        '<path d="M20 3.5603C10.9303 3.5603 3.55933 10.9333 3.55933 20.0051C3.55933 29.0768 10.9303 36.4498 20 36.4498C29.0697 36.4498 36.4407 29.0768 36.4407 20.0051C36.4407 10.9333 29.0697 3.5603 20 3.5603Z" fill="#1A203D" stroke="#0D1125"/>' +
+        '<path d="M20 40C8.97751 40 0 31.0304 0 19.9949C0 8.95934 8.97751 0 20 0C31.0225 0 40 8.96957 40 20.0051C40 31.0407 31.0225 40 20 40ZM20 2.81258C10.5317 2.81258 2.82209 10.5242 2.82209 19.9949C2.82209 29.4656 10.5317 37.1772 20 37.1772C29.4683 37.1772 37.1779 29.4656 37.1779 19.9949C37.1779 10.5242 29.4683 2.81258 20 2.81258Z" fill="url(#paint0_linear)"/>' +
+        '<path d="M20 0.408936C9.20242 0.408936 0.419189 9.19441 0.419189 19.9947C0.419189 30.795 9.20242 39.5805 20 39.5805C30.7975 39.5805 39.5807 30.795 39.5807 19.9947C39.5807 9.19441 30.7975 0.408936 20 0.408936ZM20 37.5964C10.2965 37.5964 2.41305 29.7007 2.41305 20.0049C2.41305 10.299 10.3067 2.41354 20 2.41354C29.7034 2.41354 37.5869 10.3092 37.5869 20.0049C37.5869 29.7007 29.7034 37.5964 20 37.5964Z" fill="url(#paint1_linear)"/>' +
+        '<g filter="url(#filter0_d)">' +
+        '<path d="M23.5508 12.7705V15.0469H19.1475V17.4639C19.6982 16.8135 20.4072 16.4883 21.2744 16.4883C22.2529 16.4883 22.9912 16.7637 23.4893 17.3145C23.9932 17.8594 24.2451 18.9111 24.2451 20.4697V22.5C24.2451 23.5078 24.1953 24.249 24.0957 24.7236C24.002 25.1924 23.7969 25.6289 23.4805 26.0332C23.1641 26.4316 22.7217 26.7393 22.1533 26.9561C21.5908 27.167 20.9023 27.2725 20.0879 27.2725C19.1738 27.2725 18.3682 27.1143 17.6709 26.7979C16.9736 26.4756 16.4785 25.998 16.1855 25.3652C15.8926 24.7324 15.7461 23.7539 15.7461 22.4297V21.6562H19.2969V22.5439C19.2969 23.4639 19.3291 24.1172 19.3936 24.5039C19.458 24.8906 19.6807 25.084 20.0615 25.084C20.2373 25.084 20.3779 25.0283 20.4834 24.917C20.5947 24.8057 20.6533 24.6855 20.6592 24.5566C20.6709 24.4277 20.6826 23.8682 20.6943 22.8779V20.0566C20.6943 19.5234 20.6387 19.1602 20.5273 18.9668C20.416 18.7734 20.2314 18.6768 19.9736 18.6768C19.8096 18.6768 19.6719 18.7266 19.5605 18.8262C19.4492 18.9258 19.376 19.0342 19.3408 19.1514C19.3115 19.2627 19.2969 19.5264 19.2969 19.9424H15.7812L15.9307 12.7705H23.5508Z" fill="url(#paint2_linear)"/>' +
+        "</g>" +
+        "</g>" +
+        "<defs>" +
+        '<linearGradient id="paint0_linear" x1="24.9289" y1="0.891813" x2="13.2696" y2="46.073" gradientUnits="userSpaceOnUse">' +
+        '<stop stop-color="#FFD744"/>' +
+        '<stop offset="0.0678869" stop-color="#A6761A"/>' +
+        '<stop offset="0.1851" stop-color="#FFD744"/>' +
+        '<stop offset="0.3981" stop-color="#FFD744"/>' +
+        '<stop offset="0.561" stop-color="#FCF4AE"/>' +
+        '<stop offset="0.6792" stop-color="#FFD744"/>' +
+        '<stop offset="0.75" stop-color="#A6761A"/>' +
+        '<stop offset="0.8802" stop-color="#FFD744"/>' +
+        '<stop offset="0.967" stop-color="#FCF4AE"/>' +
+        '<stop offset="1" stop-color="#FFD744"/>' +
+        "</linearGradient>" +
+        '<linearGradient id="paint1_linear" x1="27.0924" y1="-5.79555" x2="13.4727" y2="43.7179" gradientUnits="userSpaceOnUse">' +
+        '<stop stop-color="#FFD744"/>' +
+        '<stop offset="0.0678869" stop-color="#A6761A"/>' +
+        '<stop offset="0.1851" stop-color="#FFD744"/>' +
+        '<stop offset="0.3981" stop-color="#FFD744"/>' +
+        '<stop offset="0.561" stop-color="#FCF4AE"/>' +
+        '<stop offset="0.6792" stop-color="#FFD744"/>' +
+        '<stop offset="0.75" stop-color="#A6761A"/>' +
+        '<stop offset="0.8802" stop-color="#FFD744"/>' +
+        '<stop offset="0.967" stop-color="#FCF4AE"/>' +
+        '<stop offset="1" stop-color="#FFD744"/>' +
+        "</linearGradient>" +
+        '<linearGradient id="paint2_linear" x1="24.8276" y1="10.8046" x2="15.6322" y2="28.9655" gradientUnits="userSpaceOnUse">' +
+        '<stop stop-color="#FFD744"/>' +
+        '<stop offset="0.183767" stop-color="#FCF4AE"/>' +
+        '<stop offset="0.571705" stop-color="#FFD744"/>' +
+        '<stop offset="1" stop-color="#A6761A"/>' +
+        "</linearGradient>" +
+        '<clipPath id="clip0">' +
+        '<rect width="40" height="40" fill="white"/>' +
+        "</clipPath>" +
+        "</defs>" +
+        "</svg>" +
+        "</span>" +
+        element.title +
+        "  </h4>" +
+        "</div>" +
+        '<div class="right-info d-flex"> ' +
+        '<div class="with-border p-2 px-3 ml-2">' +
+        '<svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<path d="M11.0417 5.83333C11.0417 6.29357 10.6686 6.66667 10.2083 6.66667C9.74808 6.66667 9.375 6.29357 9.375 5.83333C9.375 5.3731 9.74808 5 10.2083 5C10.6686 5 11.0417 5.3731 11.0417 5.83333ZM9.58333 8.125V12.2917C9.58333 12.6368 9.86317 12.9167 10.2083 12.9167C10.5535 12.9167 10.8333 12.6368 10.8333 12.2917V8.125C10.8333 7.77982 10.5535 7.5 10.2083 7.5C9.86317 7.5 9.58333 7.77982 9.58333 8.125Z" fill="white" />' +
+        '<path fill-rule="evenodd" clip-rule="evenodd" d="M3.33325 3.75002C3.33325 2.59943 4.26599 1.66669 5.41659 1.66669H14.9999C16.1505 1.66669 17.0833 2.59943 17.0833 3.75002V15.625C17.0833 15.9702 16.8034 16.25 16.4583 16.25H4.58325C4.58325 16.7103 4.95635 17.0834 5.41659 17.0834H16.4583C16.8034 17.0834 17.0833 17.3632 17.0833 17.7084C17.0833 18.0535 16.8034 18.3334 16.4583 18.3334H5.41659C4.26599 18.3334 3.33325 17.4006 3.33325 16.25V3.75002ZM15.8333 15V3.75002C15.8333 3.28979 15.4602 2.91669 14.9999 2.91669H5.41659C4.95635 2.91669 4.58325 3.28979 4.58325 3.75002V15H15.8333Z" fill="white" />' +
+        "</svg>" +
+        "</div>" +
+        '<div class="with-border p-2 ml-2 px-3 text-white font-weight-bold"> ' +
+        element.percent +
+        " </div>" +
+        "</div> " +
+        " </div>" +
+        '<div class="progress-line-wrap p-2">' +
+        '<div class="progress-line d-flex justify-content-end" percent=' +
+        element.percent +
+        ">" +
+        '<div class="stick-wrap">' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        '<div class="stick"></div>' +
+        "</div>" +
+        '<div class="progress-line-inner">' +
+        "</div>" +
+        "</div>" +
+        "</div>" +
+        " </div>" +
+        " </div>"
       );
-    });
+    } );
   }
 
   const districtsNavoi = [
@@ -463,9 +461,9 @@ $(document).ready(function () {
     },
   ];
 
-  const lineProgressNavoi = $("#lineProgressNavoi .row");
+  const lineProgressNavoi = $( "#lineProgressNavoi .row" );
 
-  addDistrictHandle(districtsNavoi, lineProgressNavoi);
+  addDistrictHandle( districtsNavoi, lineProgressNavoi );
 
   const districtsBuxoro = [
     {
@@ -535,11 +533,11 @@ $(document).ready(function () {
     },
   ];
 
-  const lineProgressBuxoro = $("#lineProgressBuxoro .row");
+  const lineProgressBuxoro = $( "#lineProgressBuxoro .row" );
 
-  addDistrictHandle(districtsBuxoro, lineProgressBuxoro);
+  addDistrictHandle( districtsBuxoro, lineProgressBuxoro );
 
-  const lineProgressAndijon = $("#lineProgressAndijon .row");
+  const lineProgressAndijon = $( "#lineProgressAndijon .row" );
 
   const districtAndijon = [
     {
@@ -608,9 +606,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtAndijon, lineProgressAndijon);
+  addDistrictHandle( districtAndijon, lineProgressAndijon );
 
-  const lineProgressFargona = $("#lineProgressFargona .row");
+  const lineProgressFargona = $( "#lineProgressFargona .row" );
 
   const districtFargona = [
     {
@@ -691,9 +689,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtFargona, lineProgressFargona);
+  addDistrictHandle( districtFargona, lineProgressFargona );
 
-  const lineProgressJizzax = $("#lineProgressJizzax .row");
+  const lineProgressJizzax = $( "#lineProgressJizzax .row" );
   const districtJizzax = [
     {
       title: "Yangiobod tumani",
@@ -749,9 +747,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtJizzax, lineProgressJizzax);
+  addDistrictHandle( districtJizzax, lineProgressJizzax );
 
-  const lineProgressnamangan = $("#lineProgressnamangan .row");
+  const lineProgressnamangan = $( "#lineProgressnamangan .row" );
   const districtNamangan = [
     {
       title: "Namangan tumani",
@@ -803,9 +801,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtNamangan, lineProgressnamangan);
+  addDistrictHandle( districtNamangan, lineProgressnamangan );
 
-  const lineProgressSirdaryo = $("#lineProgressSirdaryo .row");
+  const lineProgressSirdaryo = $( "#lineProgressSirdaryo .row" );
 
   const districtSirdaryo = [
     {
@@ -854,9 +852,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtSirdaryo, lineProgressSirdaryo);
+  addDistrictHandle( districtSirdaryo, lineProgressSirdaryo );
 
-  const lineProgressSurxondaryo = $("#lineProgressSurxondaryo .row");
+  const lineProgressSurxondaryo = $( "#lineProgressSurxondaryo .row" );
 
   const districtSurxondaryo = [
     {
@@ -921,9 +919,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtSurxondaryo, lineProgressSurxondaryo);
+  addDistrictHandle( districtSurxondaryo, lineProgressSurxondaryo );
 
-  const lineProgressSamarqand = $("#lineProgressSamarqand .row");
+  const lineProgressSamarqand = $( "#lineProgressSamarqand .row" );
 
   const districtSamarqand = [
     {
@@ -992,9 +990,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtSamarqand, lineProgressSamarqand);
+  addDistrictHandle( districtSamarqand, lineProgressSamarqand );
 
-  const lineProgressToshkentsh = $("#lineProgressToshkentsh .row");
+  const lineProgressToshkentsh = $( "#lineProgressToshkentsh .row" );
 
   const districtToshkentsh = [
     {
@@ -1043,9 +1041,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtToshkentsh, lineProgressToshkentsh);
+  addDistrictHandle( districtToshkentsh, lineProgressToshkentsh );
 
-  const lineProgressToshkentv = $("#lineProgressToshkentv .row");
+  const lineProgressToshkentv = $( "#lineProgressToshkentv .row" );
 
   const districtToshkentv = [
     {
@@ -1138,9 +1136,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtToshkentv, lineProgressToshkentv);
+  addDistrictHandle( districtToshkentv, lineProgressToshkentv );
 
-  const lineProgressXorazim = $("#lineProgressXorazim .row");
+  const lineProgressXorazim = $( "#lineProgressXorazim .row" );
   const districtXorazim = [
     {
       title: "Xonqa tumani",
@@ -1196,9 +1194,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtXorazim, lineProgressXorazim);
+  addDistrictHandle( districtXorazim, lineProgressXorazim );
 
-  const lineProgressQoraqalpoq = $("#lineProgressQoraqalpoq .row");
+  const lineProgressQoraqalpoq = $( "#lineProgressQoraqalpoq .row" );
 
   const districtQoraqalpoq = [
     {
@@ -1271,9 +1269,9 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtQoraqalpoq, lineProgressQoraqalpoq);
+  addDistrictHandle( districtQoraqalpoq, lineProgressQoraqalpoq );
 
-  const indicatorTwoId = $("#indicatorTwoId .row");
+  const indicatorTwoId = $( "#indicatorTwoId .row" );
   const districtIndicatorTwo = [
     {
       title:
@@ -1305,17 +1303,17 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtIndicatorTwo, indicatorTwoId);
+  addDistrictHandle( districtIndicatorTwo, indicatorTwoId );
 
-  $(".home-page-owl-carousel").owlCarousel({
+  $( ".home-page-owl-carousel" ).owlCarousel( {
     margin: 10,
     nav: true,
     items: 1,
     center: true,
     stagePadding: 30,
     autoHeight: true,
-  });
-  $(".reagion-card-carousel").owlCarousel({
+  } );
+  $( ".reagion-card-carousel" ).owlCarousel( {
     loop: false,
     center: true,
     stagePadding: 30,
@@ -1335,8 +1333,8 @@ $(document).ready(function () {
         items: 5,
       },
     },
-  });
-  $(".indicator-card-carousel").owlCarousel({
+  } );
+  $( ".indicator-card-carousel" ).owlCarousel( {
     loop: false,
 
     stagePadding: 30,
@@ -1356,77 +1354,77 @@ $(document).ready(function () {
         items: 5,
       },
     },
-  });
+  } );
 
-  $('[data-toggle="tooltip"]').tooltip();
+  $( '[data-toggle="tooltip"]' ).tooltip();
 
-  $(".navbar-toggler").click(function (e) {
+  $( ".navbar-toggler" ).click( function ( e ) {
     e.preventDefault();
-    if ($(this).children("i").attr("class") == "fas fa-bars") {
-      $(this).children("i").removeClass("fa-bars").addClass("fa-times");
+    if ( $( this ).children( "i" ).attr( "class" ) == "fas fa-bars" ) {
+      $( this ).children( "i" ).removeClass( "fa-bars" ).addClass( "fa-times" );
     } else {
-      $(this).children("i").removeClass("fa-times").addClass("fa-bars");
+      $( this ).children( "i" ).removeClass( "fa-times" ).addClass( "fa-bars" );
     }
-  });
+  } );
 
-  const circleProgressBars = document.querySelectorAll(".progress-ring-circle");
+  const circleProgressBars = document.querySelectorAll( ".progress-ring-circle" );
 
-  circleProgressBars.forEach((circle) => {
+  circleProgressBars.forEach( ( circle ) => {
     const radius = circle.r.baseVal.value;
     const circumference = 2 * Math.PI * radius;
-    const getPercent = 100 - circle.getAttribute("percent");
+    const getPercent = 100 - circle.getAttribute( "percent" );
     var animationNumber = 0;
 
-    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDasharray = `${ circumference } ${ circumference }`;
     circle.style.strokeDashoffset = circumference;
 
-    function setProgress(percent) {
-      const offset = circumference - (percent / 100) * circumference;
+    function setProgress ( percent ) {
+      const offset = circumference - ( percent / 100 ) * circumference;
       circle.style.strokeDashoffset = -offset;
 
       // $(circle).next('text').text(`${percent}%`);
 
-      var time = setInterval(() => {
-        $(circle).next("text").text(`${animationNumber}%`);
+      var time = setInterval( () => {
+        $( circle ).next( "text" ).text( `${ animationNumber }%` );
 
         animationNumber += 1;
 
-        if (animationNumber > 100 - percent) {
-          clearInterval(time);
-          $(circle)
-            .next("text")
-            .text(`${100 - percent}%`);
+        if ( animationNumber > 100 - percent ) {
+          clearInterval( time );
+          $( circle )
+            .next( "text" )
+            .text( `${ 100 - percent }%` );
         }
-      }, 50);
+      }, 30 );
     }
 
-    setProgress(getPercent);
-  });
+    setProgress( getPercent );
+  } );
 
-  const lineProgressBars = document.querySelectorAll(".progress-line");
+  const lineProgressBars = document.querySelectorAll( ".progress-line" );
 
-  lineProgressBars.forEach((line) => {
-    const getPercent = line.getAttribute("percent");
+  lineProgressBars.forEach( ( line ) => {
+    const getPercent = line.getAttribute( "percent" );
 
     const childWidth = 10 - getPercent;
 
-    $(line)
-      .children(".progress-line-inner")
-      .css({
-        width: `${childWidth * 10}%`,
-      });
-  });
+    $( line )
+      .children( ".progress-line-inner" )
+      .css( {
+        width: `${ childWidth * 10 }%`,
+      } );
+  } );
 
-  $("#buxoro").click(function (e) {
+  $( "#buxoro" ).click( function ( e ) {
     e.preventDefault();
     // alert("this is buhor");
-  });
+  } );
 
-  const progressBox = $(".progres-box");
+  const progressBox = $( ".progres-box" );
 
-  progressBox.click(function (e) {
+  progressBox.click( function ( e ) {
     e.preventDefault();
-    $(this).next().slideToggle();
-    progressBox.not(this).next().slideUp();
-  });
-});
+    $( this ).next().slideToggle();
+    progressBox.not( this ).next().slideUp();
+  } );
+} );

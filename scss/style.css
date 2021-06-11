@@ -9,7 +9,7 @@ body {
 }
 
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .modal-content {
@@ -1310,6 +1310,11 @@ footer p {
   }
 }
 
+.rating-page .rating-body .map-with-owl .right-owl .slide-item {
+  max-width: 250px;
+  height: 350px;
+}
+
 @media only screen and (max-width: 768px) {
   .rating-page .rating-body .map-with-owl {
     -webkit-box-orient: vertical;
@@ -2000,6 +2005,10 @@ footer p {
   position: relative !important;
 }
 
+.indicator-second .indicator-card-carousel .test-wrap-svg-box .text {
+  font-size: 35px !important;
+}
+
 .indicator-second .indicator-card-carousel .test-wrap-svg-box .test-circle-box {
   position: absolute;
 }
@@ -2053,6 +2062,8 @@ footer p {
 }
 
 .indicator-second .indicator-card-carousel .slide-item {
+  height: 400px;
+  max-width: 290px;
   background: linear-gradient(43.39deg, #414a7c 0%, rgba(67, 78, 141, 0.2) 100%);
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
