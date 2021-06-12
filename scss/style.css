@@ -1315,8 +1315,7 @@ footer p {
 }
 
 .rating-page .rating-body .map-with-owl .right-owl .slide-item {
-  max-width: 250px;
-  height: 350px;
+  width: 250px;
 }
 
 @media only screen and (max-width: 768px) {

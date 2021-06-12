@@ -1315,10 +1315,9 @@ $( document ).ready( function () {
   } );
   $( ".reagion-card-carousel" ).owlCarousel( {
     loop: false,
-    center: true,
+    center: false,
     stagePadding: 30,
     margin: 20,
-
     autoHeight: true,
     autoWidth: true,
     items: 5,
