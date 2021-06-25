@@ -150,7 +150,7 @@ body {
   padding: 0 64px;
   transition: all 0.2s linear;
   @media screen and (max-width: 768px) {
-    padding: 0 24px;
+    padding: 0 10px;
   }
 }
 
@@ -1079,6 +1079,10 @@ footer {
       @media only screen and (max-width: 768px) {
         padding: 30px;
       }
+      @media only screen and (max-width: 400px) {
+        padding: 10px;
+      }
+
       .top-sub-header {
         .inner-sub-header {
           display: flex;
@@ -1092,6 +1096,10 @@ footer {
               transition: all 0.2s linear;
               @media all and (max-width: 768px) {
                 font-size: 18px;
+                width: min-content;
+              }
+              @media all and (max-width: 400px) {
+                font-size: 14px;
                 width: min-content;
               }
             }
@@ -1108,6 +1116,10 @@ footer {
               text-transform: uppercase;
               &:hover {
                 color: #48b7c7 !important;
+              }
+              @media all and (max-width: 400px) {
+                font-size: 14px;
+                width: min-content;
               }
             }
           }
@@ -1265,8 +1277,16 @@ footer {
               display: flex;
               justify-content: center;
               align-items: center;
+              @media all and (max-width: 400px) {
+                font-size: 14px;
+                width: min-content;
+              }
             }
             font-size: 25px;
+            @media all and (max-width: 400px) {
+              font-size: 14px;
+              width: min-content;
+            }
           }
         }
         .progress-line-wrap {
