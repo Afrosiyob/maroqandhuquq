@@ -1401,7 +1401,7 @@ $(document).ready(function () {
           clearInterval(time);
           $(circle)
             .next("text")
-            .text(`${100 - percent}%`);
+            .text(`${(100 - percent).toFixed(2)}%`);
         }
       }, 30);
     }
