@@ -298,8 +298,9 @@ $(document).ready(function () {
 
   function addDistrictHandle(data, indicatorProgress) {
 
-
+    // var oldArr = JSON.parse(data);
     var oldArr = data;
+
     var newArr = [];
     for (i = 0; i < oldArr.length; i += 2) {
       newArr.push(i);
@@ -465,7 +466,7 @@ $(document).ready(function () {
 
   const lineProgressNavoi = $("#lineProgressNavoi .row");
 
-  addDistrictHandle(districtsNavoi, lineProgressNavoi);
+  // addDistrictHandle(districtsNavoi, lineProgressNavoi);
 
   const districtsBuxoro = [
     {
@@ -537,7 +538,7 @@ $(document).ready(function () {
 
   const lineProgressBuxoro = $("#lineProgressBuxoro .row");
 
-  addDistrictHandle(districtsBuxoro, lineProgressBuxoro);
+  // addDistrictHandle(districtsBuxoro, lineProgressBuxoro);
 
   const lineProgressAndijon = $("#lineProgressAndijon .row");
 
@@ -608,7 +609,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtAndijon, lineProgressAndijon);
+  // addDistrictHandle(districtAndijon, lineProgressAndijon);
 
   const lineProgressFargona = $("#lineProgressFargona .row");
 
@@ -691,7 +692,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtFargona, lineProgressFargona);
+  // addDistrictHandle(districtFargona, lineProgressFargona);
 
   const lineProgressJizzax = $("#lineProgressJizzax .row");
   const districtJizzax = [
@@ -749,7 +750,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtJizzax, lineProgressJizzax);
+  // addDistrictHandle(districtJizzax, lineProgressJizzax);
 
   const lineProgressnamangan = $("#lineProgressnamangan .row");
   const districtNamangan = [
@@ -803,7 +804,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtNamangan, lineProgressnamangan);
+  // addDistrictHandle(districtNamangan, lineProgressnamangan);
 
   const lineProgressSirdaryo = $("#lineProgressSirdaryo .row");
 
@@ -854,7 +855,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtSirdaryo, lineProgressSirdaryo);
+  // addDistrictHandle(districtSirdaryo, lineProgressSirdaryo);
 
   const lineProgressSurxondaryo = $("#lineProgressSurxondaryo .row");
 
@@ -921,7 +922,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtSurxondaryo, lineProgressSurxondaryo);
+  // addDistrictHandle(districtSurxondaryo, lineProgressSurxondaryo);
 
   const lineProgressSamarqand = $("#lineProgressSamarqand .row");
 
@@ -992,7 +993,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtSamarqand, lineProgressSamarqand);
+  // addDistrictHandle(districtSamarqand, lineProgressSamarqand);
 
   const lineProgressToshkentsh = $("#lineProgressToshkentsh .row");
 
@@ -1043,7 +1044,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtToshkentsh, lineProgressToshkentsh);
+  // addDistrictHandle(districtToshkentsh, lineProgressToshkentsh);
 
   const lineProgressToshkentv = $("#lineProgressToshkentv .row");
 
@@ -1138,7 +1139,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtToshkentv, lineProgressToshkentv);
+  // addDistrictHandle(districtToshkentv, lineProgressToshkentv);
 
   const lineProgressXorazim = $("#lineProgressXorazim .row");
   const districtXorazim = [
@@ -1196,7 +1197,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtXorazim, lineProgressXorazim);
+  // addDistrictHandle(districtXorazim, lineProgressXorazim);
 
   const lineProgressQoraqalpoq = $("#lineProgressQoraqalpoq .row");
 
@@ -1271,7 +1272,7 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtQoraqalpoq, lineProgressQoraqalpoq);
+  // addDistrictHandle(districtQoraqalpoq, lineProgressQoraqalpoq);
 
   const indicatorTwoId = $("#indicatorTwoId .row");
   const districtIndicatorTwo = [
@@ -1305,7 +1306,11 @@ $(document).ready(function () {
     },
   ];
 
-  addDistrictHandle(districtIndicatorTwo, indicatorTwoId);
+  const districtIndicatorTwoString = JSON.parse('[{"title":"title","percent":4},{"title":"title2","percent":6}]');
+
+
+
+  addDistrictHandle(districtIndicatorTwoString, indicatorTwoId);
 
   $(".home-page-owl-carousel").owlCarousel({
     margin: 10,
