@@ -1378,7 +1378,9 @@ $(document).ready(function () {
   circleProgressBars.forEach((circle) => {
     const radius = circle.r.baseVal.value;
     const circumference = 2 * Math.PI * radius;
-    const getPercent = 100 - circle.getAttribute("percent");
+
+    const getPercent = 100 - parseInt(circle.getAttribute("percent")).toFixed(2);
+
     var animationNumber = 0;
 
     circle.style.strokeDasharray = `${circumference} ${circumference}`;
