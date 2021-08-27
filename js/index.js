@@ -1,4 +1,4 @@
-$( document ).ready( function () {
+$(document).ready(function () {
   const indicators = [
     {
       title: "Ҳудудларда қонун ҳужжатларига риоя қилиниши",
@@ -191,8 +191,8 @@ $( document ).ready( function () {
     },
   ];
 
-  function addIndicators ( data, indicatorProgress ) {
-    data.map( ( element, index ) => {
+  function addIndicators(data, indicatorProgress) {
+    data.map((element, index) => {
       indicatorProgress.append(
         '<div class="col-md-6 col-sm-12 mb-5 indicator-col ">' +
         '<div class="indicator-page-item">' +
@@ -239,7 +239,7 @@ $( document ).ready( function () {
         " </div>" +
         '<div class="under-progress-box-info mt-3 p-5">' +
         element.subtitle.map(
-          ( innerElement, index ) =>
+          (innerElement, index) =>
             '<div class="mb-3">' +
             '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3">' +
             '<div class="left-title">' +
@@ -285,41 +285,43 @@ $( document ).ready( function () {
         "</div>" +
         " </div>"
       );
-    } );
+    });
   }
 
-  const indicatorsProgress = $( "#indicatorProgressId .row" );
+  const indicatorsProgress = $("#indicatorProgressId .row");
 
-  addIndicators( indicators, indicatorsProgress );
+  addIndicators(indicators, indicatorsProgress);
 
-  const indicatorItemOneId = $( "#indicatorItemOneId .row" );
+  const indicatorItemOneId = $("#indicatorItemOneId .row");
 
-  addIndicators( indicators, indicatorItemOneId );
+  addIndicators(indicators, indicatorItemOneId);
 
-  function addDistrictHandle ( data, indicatorProgress ) {
+  function addDistrictHandle(data, indicatorProgress) {
+
+
     var oldArr = data;
     var newArr = [];
-    for ( i = 0; i < oldArr.length; i += 2 ) {
-      newArr.push( i );
+    for (i = 0; i < oldArr.length; i += 2) {
+      newArr.push(i);
     }
-    for ( i = 1; i < oldArr.length; i += 2 ) {
-      newArr.push( i );
+    for (i = 1; i < oldArr.length; i += 2) {
+      newArr.push(i);
     }
 
-    console.log( "eskisi", oldArr );
-    console.log( "yangisi", newArr );
+    console.log("eskisi", oldArr);
+    console.log("yangisi", newArr);
 
-    data.map( ( element, index ) => {
+    data.map((element, index) => {
       indicatorProgress.append(
-        `<div class="col-md-6 col-sm-12 order-${ newArr[ index ] + 1
+        `<div class="col-md-6 col-sm-12 order-${newArr[index] + 1
         }    mb-5 father-progress-box">` +
         '<div class="progres-box"> ' +
         '<div class="top-info-progress d-flex justify-content-between align-items-center align-content-center mb-3"> ' +
         '<div class="left-title"> ' +
-        `<h4 class="text-white" onclick="goDistrict('${ element.url }')">  ` +
-        `<span class="progress-inner-left-number" style=" display: ${ element.url ? "initial" : "none"
+        `<h4 class="text-white" onclick="goDistrict('${element.url}')">  ` +
+        `<span class="progress-inner-left-number" style=" display: ${element.url ? "initial" : "none"
         }">` +
-        `<div class="number-circle"> ${ index + 1 }  </div>` +
+        `<div class="number-circle"> ${index + 1}  </div>` +
         '<svg width="40" height="40" class="mr-2" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">' +
         '<g clip-path="url(#clip0)">' +
         '<path d="M20 3.5603C10.9303 3.5603 3.55933 10.9333 3.55933 20.0051C3.55933 29.0768 10.9303 36.4498 20 36.4498C29.0697 36.4498 36.4407 29.0768 36.4407 20.0051C36.4407 10.9333 29.0697 3.5603 20 3.5603Z" fill="#1A203D" stroke="#0D1125"/>' +
@@ -405,7 +407,7 @@ $( document ).ready( function () {
         " </div>" +
         " </div>"
       );
-    } );
+    });
   }
 
   const districtsNavoi = [
@@ -461,9 +463,9 @@ $( document ).ready( function () {
     },
   ];
 
-  const lineProgressNavoi = $( "#lineProgressNavoi .row" );
+  const lineProgressNavoi = $("#lineProgressNavoi .row");
 
-  addDistrictHandle( districtsNavoi, lineProgressNavoi );
+  addDistrictHandle(districtsNavoi, lineProgressNavoi);
 
   const districtsBuxoro = [
     {
@@ -533,11 +535,11 @@ $( document ).ready( function () {
     },
   ];
 
-  const lineProgressBuxoro = $( "#lineProgressBuxoro .row" );
+  const lineProgressBuxoro = $("#lineProgressBuxoro .row");
 
-  addDistrictHandle( districtsBuxoro, lineProgressBuxoro );
+  addDistrictHandle(districtsBuxoro, lineProgressBuxoro);
 
-  const lineProgressAndijon = $( "#lineProgressAndijon .row" );
+  const lineProgressAndijon = $("#lineProgressAndijon .row");
 
   const districtAndijon = [
     {
@@ -606,9 +608,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtAndijon, lineProgressAndijon );
+  addDistrictHandle(districtAndijon, lineProgressAndijon);
 
-  const lineProgressFargona = $( "#lineProgressFargona .row" );
+  const lineProgressFargona = $("#lineProgressFargona .row");
 
   const districtFargona = [
     {
@@ -689,9 +691,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtFargona, lineProgressFargona );
+  addDistrictHandle(districtFargona, lineProgressFargona);
 
-  const lineProgressJizzax = $( "#lineProgressJizzax .row" );
+  const lineProgressJizzax = $("#lineProgressJizzax .row");
   const districtJizzax = [
     {
       title: "Yangiobod tumani",
@@ -747,9 +749,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtJizzax, lineProgressJizzax );
+  addDistrictHandle(districtJizzax, lineProgressJizzax);
 
-  const lineProgressnamangan = $( "#lineProgressnamangan .row" );
+  const lineProgressnamangan = $("#lineProgressnamangan .row");
   const districtNamangan = [
     {
       title: "Namangan tumani",
@@ -801,9 +803,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtNamangan, lineProgressnamangan );
+  addDistrictHandle(districtNamangan, lineProgressnamangan);
 
-  const lineProgressSirdaryo = $( "#lineProgressSirdaryo .row" );
+  const lineProgressSirdaryo = $("#lineProgressSirdaryo .row");
 
   const districtSirdaryo = [
     {
@@ -852,9 +854,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtSirdaryo, lineProgressSirdaryo );
+  addDistrictHandle(districtSirdaryo, lineProgressSirdaryo);
 
-  const lineProgressSurxondaryo = $( "#lineProgressSurxondaryo .row" );
+  const lineProgressSurxondaryo = $("#lineProgressSurxondaryo .row");
 
   const districtSurxondaryo = [
     {
@@ -919,9 +921,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtSurxondaryo, lineProgressSurxondaryo );
+  addDistrictHandle(districtSurxondaryo, lineProgressSurxondaryo);
 
-  const lineProgressSamarqand = $( "#lineProgressSamarqand .row" );
+  const lineProgressSamarqand = $("#lineProgressSamarqand .row");
 
   const districtSamarqand = [
     {
@@ -990,9 +992,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtSamarqand, lineProgressSamarqand );
+  addDistrictHandle(districtSamarqand, lineProgressSamarqand);
 
-  const lineProgressToshkentsh = $( "#lineProgressToshkentsh .row" );
+  const lineProgressToshkentsh = $("#lineProgressToshkentsh .row");
 
   const districtToshkentsh = [
     {
@@ -1041,9 +1043,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtToshkentsh, lineProgressToshkentsh );
+  addDistrictHandle(districtToshkentsh, lineProgressToshkentsh);
 
-  const lineProgressToshkentv = $( "#lineProgressToshkentv .row" );
+  const lineProgressToshkentv = $("#lineProgressToshkentv .row");
 
   const districtToshkentv = [
     {
@@ -1136,9 +1138,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtToshkentv, lineProgressToshkentv );
+  addDistrictHandle(districtToshkentv, lineProgressToshkentv);
 
-  const lineProgressXorazim = $( "#lineProgressXorazim .row" );
+  const lineProgressXorazim = $("#lineProgressXorazim .row");
   const districtXorazim = [
     {
       title: "Xonqa tumani",
@@ -1194,9 +1196,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtXorazim, lineProgressXorazim );
+  addDistrictHandle(districtXorazim, lineProgressXorazim);
 
-  const lineProgressQoraqalpoq = $( "#lineProgressQoraqalpoq .row" );
+  const lineProgressQoraqalpoq = $("#lineProgressQoraqalpoq .row");
 
   const districtQoraqalpoq = [
     {
@@ -1269,9 +1271,9 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtQoraqalpoq, lineProgressQoraqalpoq );
+  addDistrictHandle(districtQoraqalpoq, lineProgressQoraqalpoq);
 
-  const indicatorTwoId = $( "#indicatorTwoId .row" );
+  const indicatorTwoId = $("#indicatorTwoId .row");
   const districtIndicatorTwo = [
     {
       title:
@@ -1303,17 +1305,17 @@ $( document ).ready( function () {
     },
   ];
 
-  addDistrictHandle( districtIndicatorTwo, indicatorTwoId );
+  addDistrictHandle(districtIndicatorTwo, indicatorTwoId);
 
-  $( ".home-page-owl-carousel" ).owlCarousel( {
+  $(".home-page-owl-carousel").owlCarousel({
     margin: 10,
     nav: true,
     items: 1,
     center: true,
     stagePadding: 30,
     autoHeight: true,
-  } );
-  $( ".reagion-card-carousel" ).owlCarousel( {
+  });
+  $(".reagion-card-carousel").owlCarousel({
     loop: false,
     center: false,
     stagePadding: 30,
@@ -1332,8 +1334,8 @@ $( document ).ready( function () {
         items: 5,
       },
     },
-  } );
-  $( ".indicator-card-carousel" ).owlCarousel( {
+  });
+  $(".indicator-card-carousel").owlCarousel({
     loop: false,
 
     stagePadding: 30,
@@ -1353,77 +1355,77 @@ $( document ).ready( function () {
         items: 5,
       },
     },
-  } );
+  });
 
-  $( '[data-toggle="tooltip"]' ).tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
 
-  $( ".navbar-toggler" ).click( function ( e ) {
+  $(".navbar-toggler").click(function (e) {
     e.preventDefault();
-    if ( $( this ).children( "i" ).attr( "class" ) == "fas fa-bars" ) {
-      $( this ).children( "i" ).removeClass( "fa-bars" ).addClass( "fa-times" );
+    if ($(this).children("i").attr("class") == "fas fa-bars") {
+      $(this).children("i").removeClass("fa-bars").addClass("fa-times");
     } else {
-      $( this ).children( "i" ).removeClass( "fa-times" ).addClass( "fa-bars" );
+      $(this).children("i").removeClass("fa-times").addClass("fa-bars");
     }
-  } );
+  });
 
-  const circleProgressBars = document.querySelectorAll( ".progress-ring-circle" );
+  const circleProgressBars = document.querySelectorAll(".progress-ring-circle");
 
-  circleProgressBars.forEach( ( circle ) => {
+  circleProgressBars.forEach((circle) => {
     const radius = circle.r.baseVal.value;
     const circumference = 2 * Math.PI * radius;
-    const getPercent = 100 - circle.getAttribute( "percent" );
+    const getPercent = 100 - circle.getAttribute("percent");
     var animationNumber = 0;
 
-    circle.style.strokeDasharray = `${ circumference } ${ circumference }`;
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
     circle.style.strokeDashoffset = circumference;
 
-    function setProgress ( percent ) {
-      const offset = circumference - ( percent / 100 ) * circumference;
+    function setProgress(percent) {
+      const offset = circumference - (percent / 100) * circumference;
       circle.style.strokeDashoffset = -offset;
 
       // $(circle).next('text').text(`${percent}%`);
 
-      var time = setInterval( () => {
-        $( circle ).next( "text" ).text( `${ animationNumber }%` );
+      var time = setInterval(() => {
+        $(circle).next("text").text(`${animationNumber}%`);
 
         animationNumber += 1;
 
-        if ( animationNumber > 100 - percent ) {
-          clearInterval( time );
-          $( circle )
-            .next( "text" )
-            .text( `${ 100 - percent }%` );
+        if (animationNumber > 100 - percent) {
+          clearInterval(time);
+          $(circle)
+            .next("text")
+            .text(`${100 - percent}%`);
         }
-      }, 30 );
+      }, 30);
     }
 
-    setProgress( getPercent );
-  } );
+    setProgress(getPercent);
+  });
 
-  const lineProgressBars = document.querySelectorAll( ".progress-line" );
+  const lineProgressBars = document.querySelectorAll(".progress-line");
 
-  lineProgressBars.forEach( ( line ) => {
-    const getPercent = line.getAttribute( "percent" );
+  lineProgressBars.forEach((line) => {
+    const getPercent = line.getAttribute("percent");
 
     const childWidth = 10 - getPercent;
 
-    $( line )
-      .children( ".progress-line-inner" )
-      .css( {
-        width: `${ childWidth * 10 }%`,
-      } );
-  } );
+    $(line)
+      .children(".progress-line-inner")
+      .css({
+        width: `${childWidth * 10}%`,
+      });
+  });
 
-  $( "#buxoro" ).click( function ( e ) {
+  $("#buxoro").click(function (e) {
     e.preventDefault();
     // alert("this is buhor");
-  } );
+  });
 
-  const progressBox = $( ".progres-box" );
+  const progressBox = $(".progres-box");
 
-  progressBox.click( function ( e ) {
+  progressBox.click(function (e) {
     e.preventDefault();
-    $( this ).next().slideToggle();
-    progressBox.not( this ).next().slideUp();
-  } );
-} );
+    $(this).next().slideToggle();
+    progressBox.not(this).next().slideUp();
+  });
+});
