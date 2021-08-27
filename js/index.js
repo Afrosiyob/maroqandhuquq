@@ -1379,7 +1379,7 @@ $(document).ready(function () {
     const radius = circle.r.baseVal.value;
     const circumference = 2 * Math.PI * radius;
 
-    const getPercent = 100 - parseInt(circle.getAttribute("percent")).toFixed(2);
+    const getPercent = 100 - parseFloat(circle.getAttribute("percent")).toFixed(2);
 
     var animationNumber = 0;
 
