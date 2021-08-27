@@ -1306,7 +1306,7 @@ $(document).ready(function () {
     },
   ];
 
-  const districtIndicatorTwoString = JSON.parse('[{"title":"title","percent":4},{"title":"title2","percent":6}]');
+  const districtIndicatorTwoString = JSON.parse('[{"title":"title","percent":1.1},{"title":"title2","percent":8.7}]');
 
 
 
