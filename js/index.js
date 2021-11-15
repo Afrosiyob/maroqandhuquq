@@ -466,7 +466,7 @@ $(document).ready(function () {
 
   const lineProgressNavoi = $("#lineProgressNavoi .row");
 
-  // addDistrictHandle(districtsNavoi, lineProgressNavoi);
+  addDistrictHandle(districtsNavoi, lineProgressNavoi);
 
   const districtsBuxoro = [
     {
@@ -538,7 +538,7 @@ $(document).ready(function () {
 
   const lineProgressBuxoro = $("#lineProgressBuxoro .row");
 
-  // addDistrictHandle(districtsBuxoro, lineProgressBuxoro);
+  addDistrictHandle(districtsBuxoro, lineProgressBuxoro);
 
   const lineProgressAndijon = $("#lineProgressAndijon .row");
 
@@ -1275,6 +1275,7 @@ $(document).ready(function () {
   // addDistrictHandle(districtQoraqalpoq, lineProgressQoraqalpoq);
 
   const indicatorTwoId = $("#indicatorTwoId .row");
+
   const districtIndicatorTwo = [
     {
       title:
